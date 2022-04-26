@@ -1,1 +1,1 @@
-# Banking-Management-Frontend
+# Banking-Management-Frontend[![Netlify Status](https://api.netlify.com/api/v1/badges/f90ca6bf-9b02-4757-a583-4da52048c7cd/deploy-status)](https://app.netlify.com/sites/effulgent-speculoos-8e2ff7/deploys)
