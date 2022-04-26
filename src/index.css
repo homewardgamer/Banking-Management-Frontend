@@ -37,10 +37,12 @@ html,
 }
 
 .auth-wrapper {
+  margin-top: 10rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: left;
+  align-items: center;
 }
 
 .auth-inner {
