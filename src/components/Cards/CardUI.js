@@ -6,12 +6,12 @@ const CardsUI = props => {
     
     <div>
         <navbar/>
-   <div id="fed" className="card text" style={{backgroundColor: "rgba(0, 1, 2, 0.8)"}}>
-   <div className="overflow">
+   <div id="fed" className=" text">
+   <div className="overflow" style={{borderTopLeftRadius:"1em", borderTopRightRadius:"1em"}}>
        <img src={props.imgsrc} alt="cam" className="card-img-top" />
    </div>
-   <div className="card-body text-dark">
-       <h4 className="card-title " style={{color: "rgba(255, 255, 170, 0.8)"}}>{props.title}</h4>
+   <div className="card-body-small text-dark">
+       <h4 className="card-title-small " >{props.title}</h4>
        <p className="card-text " style={{color: 'white'}}>
            {/* lorem epsum kkjjedhjdkehkehkehekhdkgdjgd ejgejkegkjehkejlelel dfjfhmh hgkfkg, gfkbbj jhfitoihk fyiuto8ln h7itig,j gukfkliyyftd ghli,jb fjyfhjmh oufjdgrsxcm dgcmv,luiu gdhtdrsh fiyfk */}
 24

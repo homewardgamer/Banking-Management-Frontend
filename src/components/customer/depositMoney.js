@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ImgBill from "./deposit2-removebg-preview.png"
-import bill from "./bill.css"
+import "./bill.css"
 
 export default class Login extends Component {
   render() {

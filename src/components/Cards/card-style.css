@@ -98,14 +98,30 @@ p{
 
     box-shadow: 5px 10px 20px 1px rgba(89, 89, 87, 0.8) !important;
 }
-.card-body{
+.card-body-big{
     color: #fff;
     padding: 1rem 0 !important;
-    background:linear-gradient(to right, #18b7dad0, #013f53e1);
+    background:linear-gradient(to right, #41d8dd, #5183ee);
+    border-radius: 1em;
+}
+.card-body-small{
+    color: #fff;
+    padding: 1rem 0 !important;
+    background:linear-gradient(to right, #54e38e, #41c7af);
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
 }
 .card-text{
     font-size: 0.9rem;
-    padding: 0.4rem 1.9rem;
+    padding: 0.2rem 2rem;
+}
+.card-title-big{
+    color:white;
+}
+
+.card-title-small{
+    color:white;
+    padding: 0.2em 1em;
 }
 
 .container-fluid-row{
@@ -117,44 +133,23 @@ p{
     overflow: hidden;
 }
 
-.card-img-top{
-    transform: scale(1);
-    transition: transform 0.5s ease;
-}
-
-.card-img-top:hover{
-    transform: scale(1.8);
-    color: rgba(12, 1, 32, 0.35);
-}
 /* p.card-text.text-secondary{
     color: red;
 } */
-
-
-
-  #scards{
-   
+#scards{
     height:auto;
     /* background-image: url("https://wallpaperaccess.com/full/2053899.jpg"); */
     background-attachment: fixed;
     background-repeat:no-repeat;
-    
-
     background-size: cover;
     background-position: center;
     padding:3rem;
-
   }
   
-
-
-
-  
-  #buttons{
-
+#buttons{
     color:rgba(103, 103, 216, 0.8);
     border-color: rgba(22, 22, 28, 0.8);
-  }
+}
 
   #buttons:hover{
 
