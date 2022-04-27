@@ -12,6 +12,7 @@ import SeeAccount from './components/admin/seeaccountinfo'
 import NewBranch from './components/admin/newbranch'
 import NewEmployee from './components/admin/employeeinfo'
 import BranchCustomer from './components/admin/branchcustomer'
+import AccountStatement from './components/customer/accountstatement'
 
 import Admin from './admin'
 import Customer from './customer'
@@ -51,6 +52,11 @@ function App() {
                 <li className="nav-item">
                   <Link className="nav-link" to={'/admin'}>
                     Admin
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to={'/account-statement'}>
+                    Account Statement
                   </Link>
                 </li>
                 {/*
@@ -105,6 +111,7 @@ function App() {
               <Route path="/new-branch" element={<NewBranch/>}/>
               <Route path="/new-employee" element={<NewEmployee/>}/>
               <Route path="/branch-customer" element={<BranchCustomer/>}/>
+              <Route path="/account-statement" element={<AccountStatement/>}/>
             </Routes>
           </div>
         </div>
