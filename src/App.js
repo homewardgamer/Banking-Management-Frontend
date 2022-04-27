@@ -106,8 +106,6 @@ function App() {
               <Route path="/cus-sign-in" element={<CustomerLogin />} />
               <Route path="/admin-sign-in" element={<AdminLogin />} />
               <Route path="/change-pwd" element={<ChangePassword />} />
-
-              <Route path="customer" element={<Customer/>}/>
               {/* below routes are just for check */}
               <Route path="bill" element={<Bill/>}/>
               <Route path="transfer" element={<Transfer/>}/>
