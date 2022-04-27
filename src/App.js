@@ -20,6 +20,7 @@ import Bill from "./components/customer/billpayment"
 import Transfer from "./components/customer/moneytransfer"
 import Deposit from "./components/admin/depositMoney"
 import Withdraw from "./components/admin/withdrawMoney"
+import Verify from "./components/customer/verification"
 
 function App() {
   return (
@@ -111,6 +112,7 @@ function App() {
               <Route path="transfer" element={<Transfer/>}/>
               <Route path="deposit" element={<Deposit/>}/>
               <Route path="withdraw" element={<Withdraw/>}/>
+              <Route path="verify" element={<Verify/>}/>
               <Route path="/customer" element={<Customer/>}/>
               <Route path="/admin" element={<Admin/>}/>
               <Route path="/block-account" element={<BlockAccount/>}/>

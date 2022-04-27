@@ -44,10 +44,10 @@ a {
 	margin: 15px 0;
 } 
 
-button {
+.bb {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #ff4b2bdd;
+	background-color: #ff4b2bd2;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -67,7 +67,7 @@ button:focus {
 
 button.ghost {
 	background-color: transparent;
-	border-color: #FFFFFF;
+	border-color: #b27c7c;
 }
 
  form {
@@ -103,7 +103,20 @@ button.ghost {
 	max-width: 100%;
 	min-height: 600px;
 } 
-
+.cc:hover{
+    transform: translateY(-20px);
+    transition:0.5s;
+    z-index: 3;
+	box-shadow: 5px 10px 15px 1px #AC7D88 !important;
+}
+#im{
+	transform: scale(1);
+    transition: transform 0.5s ease;
+}
+#im:hover{
+	transform: scale(1.2);
+    color: rgba(12, 1, 32, 0.35);
+}
 .form-container {
 	margin-top: 10 rem;
 	position: absolute;

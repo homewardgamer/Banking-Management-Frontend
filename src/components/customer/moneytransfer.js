@@ -5,7 +5,7 @@ import "../../css/bill.css"
 export default class Login extends Component {
   render() {
     return (
-      <form style={{backgroundColor: " #3a293ae8",marginTop: "5rem"}}>
+      <form style={{backgroundColor: " #85586F",marginTop: "7rem",paddingBottom: "3rem"}}>
         <section>
   <div className="container cc" id="container">
     <div className="form-container sign-in-container">
@@ -33,7 +33,7 @@ export default class Login extends Component {
           {/* <label for="email">Email</label> */}
           <input type="text" className="form-control" name="holderName" placeholder="Account Holder Name" />
         </div>
-        <button type="submit" className="btn btn-dark">TRANSFER</button>
+        <button type="submit" className="btn bb">TRANSFER</button>
       </form>
     </div>
     <div className="overlay-container">
@@ -43,7 +43,7 @@ export default class Login extends Component {
       <p>Are you a new user? </p>
       <a className="btn btn-light btn-lg" href="/register" role="button">SIGN UP</a>
       <a className="btn btn-dark btn-lg" href="/" role="button">Back Home</a>  */}
-      <img src={ImgBill} alt="dones" width="400" height="600"/>
+      <img id="im" src={ImgBill} alt="dones" width="400" height="600"/>
     </div>
   </div>
 </div>
