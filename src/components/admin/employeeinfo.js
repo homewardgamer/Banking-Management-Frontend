@@ -8,7 +8,7 @@ export default class NewEmployee extends Component {
         <h3>Add Employee</h3>
 
         <div className="mb-3">
-          <label>Employee Id</label>
+          {/* <label>Employee Id</label> */}
           <input
             type="number"
             className="form-control"
@@ -17,7 +17,7 @@ export default class NewEmployee extends Component {
         </div>
         
         <div className="mb-3">
-          <label>First name</label>
+          {/* <label>First name</label> */}
           <input
             type="text"
             className="form-control"
@@ -26,12 +26,12 @@ export default class NewEmployee extends Component {
         </div>
 
         <div className="mb-3">
-          <label>Last name</label>
+          {/* <label>Last name</label> */}
           <input type="text" className="form-control" placeholder="Last name" />
         </div>
         
         <div className="mb-3">
-          <label>Date of Birth</label>
+          {/* <label>Date of Birth</label> */}
           <input
             type="date"
             className="form-control"
@@ -40,7 +40,7 @@ export default class NewEmployee extends Component {
         </div>
 
         <div className="mb-3">
-          <label>Phone Number</label>
+          {/* <label>Phone Number</label> */}
           <input
             type="number"
             className="form-control"
@@ -49,7 +49,7 @@ export default class NewEmployee extends Component {
         </div>
 
         <div className="mb-3">
-          <label>Email address</label>
+          {/* <label>Email address</label> */}
           <input
             type="email"
             className="form-control"
@@ -58,7 +58,7 @@ export default class NewEmployee extends Component {
         </div>
 
         <div className="mb-3">
-          <label>Branch</label>
+          {/* <label>Branch</label> */}
           <input
             type="email"
             className="form-control"
@@ -67,7 +67,7 @@ export default class NewEmployee extends Component {
         </div>
 
         <div className="mb-3">
-          <label>Address</label>
+          {/* <label>Address</label> */}
           <input
             type="text"
             className="form-control"

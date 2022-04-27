@@ -8,7 +8,7 @@ export default class SeeAccount extends Component {
         <h3>See Account Information</h3>
 
         <div className="mb-3">
-          <label>Account Number</label>
+          {/* <label>Account Number</label> */}
           <input
             type="number"
             className="form-control"

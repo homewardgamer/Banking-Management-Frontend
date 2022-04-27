@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './components/Cards/card-style.css'
+import "./css/card-style.css";
 import App from './App'
-import './index.css'
+import '../src/css/index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

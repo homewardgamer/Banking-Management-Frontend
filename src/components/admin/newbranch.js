@@ -8,7 +8,7 @@ export default class NewBranch extends Component {
         <h3>New Branch</h3>
 
         <div className="mb-3">
-          <label>Branch Id</label>
+          {/* <label>Branch Id</label> */}
           <input
             type="text"
             className="form-control"
@@ -16,7 +16,7 @@ export default class NewBranch extends Component {
           />
         </div>
         <div className="mb-3">
-          <label>Branch Name</label>
+          {/* <label>Branch Name</label> */}
           <input
             type="text"
             className="form-control"

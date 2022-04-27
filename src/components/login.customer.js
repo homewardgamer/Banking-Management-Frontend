@@ -8,7 +8,7 @@ export default class Login extends Component {
         <h3>Customer Log In</h3>
 
         <div className="mb-3">
-          <label>Account Number</label>
+          {/* <label>Account Number</label> */}
           <input
             type="number"
             className="form-control"
@@ -17,7 +17,7 @@ export default class Login extends Component {
         </div>
 
         <div className="mb-3">
-          <label>Password</label>
+          {/* <label>Password</label> */}
           <input
             type="password"
             className="form-control"

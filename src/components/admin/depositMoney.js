@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import ImgBill from "./withdraw-money-removebg-preview.png"
-import "./bill.css"
+import ImgBill from "./deposit2-removebg-preview.png"
+import "../../css/bill.css"
 
 export default class Login extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class Login extends Component {
   <div className="container cc" id="container">
     <div className="form-container sign-in-container">
       <form action="/login" method="POST">
-        <h1>Withdraw Money</h1>
+        <h1>Deposit Money</h1>
         <br></br>
         {/* <div className="social-container">
           <a className="btn btn-block" href="/auth/google" role="button">
@@ -31,13 +31,9 @@ export default class Login extends Component {
         </div>
         <div className="form-group">
           {/* <label for="email">Email</label> */}
-          <input type="number" className="form-control" name="amount" placeholder="Amount Withdraw(in Rs.)" />
+          <input type="number" className="form-control" name="amount" placeholder="Amount(in Rs.)" />
         </div>
-        <div className="form-group">
-          {/* <label for="email">Email</label> */}
-          <input type="date" className="form-control" name="date" placeholder="Date" />
-        </div>
-        <button type="submit" className="btn btn-dark">WITHDRAW</button>
+        <button type="submit" className="btn btn-dark">DEPOSIT</button>
       </form>
     </div>
     <div className="overlay-container">

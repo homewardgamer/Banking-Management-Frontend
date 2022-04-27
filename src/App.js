@@ -1,6 +1,6 @@
 import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import './App.css'
+import '../src/css/App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
 import CustomerLogin from './components/login.customer'
@@ -18,8 +18,8 @@ import Admin from './admin'
 import Customer from './customer'
 import Bill from "./components/customer/billpayment"
 import Transfer from "./components/customer/moneytransfer"
-import Deposit from "./components/customer/depositMoney"
-import Withdraw from "./components/customer/withdrawMoney"
+import Deposit from "./components/admin/depositMoney"
+import Withdraw from "./components/admin/withdrawMoney"
 
 function App() {
   return (

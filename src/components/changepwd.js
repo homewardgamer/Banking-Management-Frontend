@@ -17,11 +17,11 @@ export default class ChangePassword extends Component {
         </div>
 
         <div className="mb-3">
-          <label>Old Password</label>
+          {/* <label>Old Password</label> */}
           <input
             type="password"
             className="form-control"
-            placeholder="Enter password"
+            placeholder="Enter Old Password"
           />
         </div>
         <div className="mb-3">
@@ -29,7 +29,7 @@ export default class ChangePassword extends Component {
           <input
             type="password"
             className="form-control"
-            placeholder="Enter password"
+            placeholder="Enter New Password"
           />
         </div>
 
