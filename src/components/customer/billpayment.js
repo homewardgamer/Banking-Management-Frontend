@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ImgBill from "./bill11.png"
+import ImgBill from "../../img/bill11.png"
 import "../../css/bill.css"
 
 export default class Login extends Component {
