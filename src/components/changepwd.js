@@ -7,11 +7,15 @@ export default class ChangePassword extends Component {
       <form className="auth-inner">
         <h3>Change Password</h3>
         <div className="mb-3">
+
           {/* <label>Email address</label> */}
+
+          <label>Account Number</label>
+
           <input
-            type="email"
+            type="number"
             className="form-control"
-            placeholder="Enter email"
+            placeholder="Enter Account Number"
           />
         </div>
 
