@@ -13,7 +13,7 @@ import NewBranch from './components/admin/newbranch'
 import NewEmployee from './components/admin/employeeinfo'
 import BranchCustomer from './components/admin/branchcustomer'
 
-
+import Admin from './admin'
 import Customer from './customer'
 
 
@@ -23,7 +23,7 @@ function App() {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container">
-            <Link className="navbar-brand" to={'/sign-in'}>
+            <Link className="navbar-brand" to={'/'}>
               Bank
             </Link>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -46,6 +46,11 @@ function App() {
                 <li className="nav-item">
                   <Link className="nav-link" to={'/customer'}>
                     Customer
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to={'/admin'}>
+                    Admin
                   </Link>
                 </li>
                 {/*
@@ -93,6 +98,7 @@ function App() {
               <Route path="/admin-sign-in" element={<AdminLogin />} />
               <Route path="/change-pwd" element={<ChangePassword />} />
               <Route path="/customer" element={<Customer/>}/>
+              <Route path="/admin" element={<Admin/>}/>
               <Route path="/block-account" element={<BlockAccount/>}/>
               <Route path="/edit-account-info" element={<EditAccount/>}/>
               <Route path="/see-account-info" element={<SeeAccount/>}/>
