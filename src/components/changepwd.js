@@ -8,10 +8,7 @@ export default class ChangePassword extends Component {
         <h3>Change Password</h3>
         <div className="mb-3">
 
-          {/* <label>Email address</label> */}
-
           <label>Account Number</label>
-
           <input
             type="number"
             className="form-control"
@@ -20,7 +17,7 @@ export default class ChangePassword extends Component {
         </div>
 
         <div className="mb-3">
-          {/* <label>Old Password</label> */}
+          <label>Old Password</label>
           <input
             type="password"
             className="form-control"
@@ -28,7 +25,7 @@ export default class ChangePassword extends Component {
           />
         </div>
         <div className="mb-3">
-          {/* <label>New Password</label> */}
+          <label>New Password</label>
           <input
             type="password"
             className="form-control"
