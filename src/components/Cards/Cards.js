@@ -8,7 +8,7 @@ class Cards extends Component {
     return (
       //  <div><navbar/>
 
-      <div>
+      <div style={{marginTop: "5rem"}}>
         <div
           className="container-fluid d-flex justify-content-center"
           id="scards"

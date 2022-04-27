@@ -6,9 +6,7 @@
 	box-sizing: border-box;
 } 
 
- body {
-	 
-	 background: #322e32d2; 
+body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
