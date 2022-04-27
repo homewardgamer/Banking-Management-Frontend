@@ -6,7 +6,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Login from './components/login.component'
 import ChangePassword from './components/changepwd'
 import Customer from './customer'
-
+import Bill from "./components/customer/billpayment"
+import Transfer from "./components/customer/moneytransfer"
+import Deposit from "./components/customer/depositMoney"
+import Withdraw from "./components/customer/withdrawMoney"
 
 function App() {
   return (
@@ -46,6 +49,11 @@ function App() {
               <Route path="/sign-in" element={<Login />} />
               <Route path="/change-pwd" element={<ChangePassword />} />
               <Route path="customer" element={<Customer/>}/>
+              {/* below routes are just for check */}
+              <Route path="bill" element={<Bill/>}/>
+              <Route path="transfer" element={<Transfer/>}/>
+              <Route path="deposit" element={<Deposit/>}/>
+              <Route path="withdraw" element={<Withdraw/>}/>
             </Routes>
           </div>
         </div>

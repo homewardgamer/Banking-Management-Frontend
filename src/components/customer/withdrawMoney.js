@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ImgBill from "./ImgBill.png"
+import ImgBill from "./withdraw-money-removebg-preview.png"
 import bill from "./bill.css"
 
 export default class Login extends Component {
@@ -10,7 +10,7 @@ export default class Login extends Component {
   <div className="container cc" id="container">
     <div className="form-container sign-in-container">
       <form action="/login" method="POST">
-        <h1>Money Transfer</h1>
+        <h1>Withdraw Money</h1>
         <br></br>
         {/* <div className="social-container">
           <a className="btn btn-block" href="/auth/google" role="button">
@@ -23,17 +23,21 @@ export default class Login extends Component {
         </div>
         <div className="form-group">
           {/* <label for="email">Email</label> */}
-          <input type="text" className="form-control" name="CAccountNumber" placeholder="Confirm Account Number" />
+          <input type="text" className="form-control" name="AccountHolder" placeholder="Account Holder Name" />
         </div>
         <div className="form-group">
           {/* <label for="password">Password</label> */}
-          <input type="text" className="form-control" name="ifsc" placeholder="IFSC" />
+          <input type="text" className="form-control" name="bank" placeholder="Drawee Bank/Branch" />
         </div>
         <div className="form-group">
           {/* <label for="email">Email</label> */}
-          <input type="text" className="form-control" name="holderName" placeholder="Account Holder Name" />
+          <input type="number" className="form-control" name="amount" placeholder="Amount Withdraw(in Rs.)" />
         </div>
-        <button type="submit" className="btn btn-dark">TRANSFER</button>
+        <div className="form-group">
+          {/* <label for="email">Email</label> */}
+          <input type="date" className="form-control" name="date" placeholder="Date" />
+        </div>
+        <button type="submit" className="btn btn-dark">WITHDRAW</button>
       </form>
     </div>
     <div className="overlay-container">
