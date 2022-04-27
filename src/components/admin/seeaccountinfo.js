@@ -1,26 +1,27 @@
 import React, { Component } from 'react'
 
-export default class NewBranch extends Component {
+export default class SeeAccount extends Component {
   render() {
     return (
-    <div className="changepwd auth-wrapper">
+    <div className="auth-wrapper">
       <form className="auth-inner">
-        <h3>Branch Customers</h3>
+        <h3>See Account Information</h3>
 
         <div className="mb-3">
-          <label>Branch Id</label>
+          <label>Account Number</label>
           <input
-            type="text"
+            type="number"
             className="form-control"
-            placeholder="Enter Branch Id"
+            placeholder="First name"
           />
         </div>
 
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
-            Get Customer Details
+            See Account Information
           </button>
         </div>
+        
       </form>
       </div>
     )

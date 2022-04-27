@@ -5,14 +5,14 @@ export default class Login extends Component {
     return (
       <div  className="auth-wrapper">
       <form className="auth-inner">
-        <h3>Sign In</h3>
+        <h3>Admin Log In</h3>
 
         <div className="mb-3">
-          <label>Email address</label>
+          <label>Account Number</label>
           <input
-            type="email"
+            type="number"
             className="form-control"
-            placeholder="Enter email"
+            placeholder="Enter Account Number"
           />
         </div>
 
