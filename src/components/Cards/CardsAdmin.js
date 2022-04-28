@@ -7,6 +7,7 @@ import addBranch from "../../img/addBranch.png"
 import CustD from "../../img/CustomerDetails.png"
 import editCustInfo from "../../img/editCustInfo.png"
 import addEmployee from "../../img/addEmployee.png"
+// import ChangePassword from "../../img/change-pwd.png"
 import { Link } from "react-router-dom";
 
 class Cards extends Component {
@@ -31,53 +32,61 @@ class Cards extends Component {
             </div>
             
             <div className="col-md-2 col-sm-12 ss" id="first">
-            <Link to="/account-statement">
+            <Link to="/deposit">
               <Card
                 imgsrc={deposit}
-                title="DEPOSIT MONEY"
+                title="Deposit Money"
               />
               </Link>
             </div>
             <div className="col-md-2 col-sm-12 ss" id="sec">
-            <Link to="/transfer">
+            <Link to="/withdraw">
               <Card
                 imgsrc={withdraw}
-                title="WITHDRAW MONEY"
+                title="Withdraw Money"
               />
               </Link>
             </div>
             <div className="col-md-2 col-sm-12 ss" id="first">
-            <Link to="/bill">
+            <Link to="/see-account-info">
               <Card
                 imgsrc={editCustInfo}
-                title="EDIT INFO"
+                title="Customer Info"
               />
               </Link>
             </div>
             <div className="col-md-2 col-sm-12 ss" id="sec">
-            <Link to="/block-account">
+            <Link to="/new-employee">
               <Card
                 imgsrc={addEmployee}
-                title="ADD EMPLOYEE"
+                title="Add Employee"
               />
               </Link>
             </div>
             <div className="col-md-2 col-sm-12 ss" id="first">
-            <Link to="/change-pwd">
+            <Link to="/new-branch">
               <Card
                 imgsrc={addBranch}
-                title="ADD BRANCH"
+                title="Add New Branch"
               />
               </Link>
             </div>
             <div className="col-md-2 col-sm-12 ss" id="first">
-            <Link to="/change-pwd">
+            <Link to="/branch-customer">
               <Card
                 imgsrc={CustD}
-                title="CUSTOMER DETAILS"
+                title="Branch Customers"
               />
               </Link>
             </div>
+            {/* <div className="col-md-2 col-sm-12 ss" id="first">
+            <Link to="/change-pwd">
+              <Card
+                imgsrc={ChangePassword}
+                title="Change Password"
+              />
+              </Link>
+            </div> */}
           </div>
         </div>
       </div>
