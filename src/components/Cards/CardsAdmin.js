@@ -26,7 +26,7 @@ class Cards extends Component {
 
             <div className="col-md-12 col-sm-12 ff" id="first">
               <Card2
-                title="Customer Name"
+                title="Admin Name"
               />
             </div>
             
