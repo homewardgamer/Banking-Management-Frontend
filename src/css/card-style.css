@@ -4,8 +4,7 @@
 } */
 .ff{
     width:30rem;
-   padding: 3rem;
-  
+    padding: 1rem;
     margin-top:5rem;
     border-color: rgb(245, 230, 205);
     border-radius: 23px;
@@ -41,8 +40,7 @@
 
 #first{
     
-        margin: 30px auto;
-      
+        margin: 10px auto;
         border-radius: 40px;
       /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
         cursor: pointer;
@@ -51,14 +49,11 @@
 }
 
 #sec{
-    
-        margin: 30px auto;
-        
+        margin: 10px auto;
         border-radius: 40px;
       /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
         cursor: pointer;
-        transition: 0.4s; 
-      
+        transition: 0.4s;
 }
 
 #first:hover{
@@ -106,6 +101,9 @@ p{
     background-size: cover;
   }
 
+  .card-imgcolor{
+    background:linear-gradient(to right, #54e38e, #41c7af);
+  }
   
 .card:hover{
     box-shadow: 5px 10px 20px 1px rgba(89, 89, 87, 0.8) !important;

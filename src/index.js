@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./css/card-style.css";
 import App from "./App";
-import Home from "./home";
+// import Home from "./home";
 import "../src/css/index.css";
 import { BrowserRouter } from "react-router-dom";
 

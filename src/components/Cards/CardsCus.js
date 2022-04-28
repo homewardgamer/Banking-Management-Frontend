@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import Card from "./CardUI";
 import Card2 from "./Card2UI";
-import Verification from "../../img/verification.png"
+// import Verification from "../../img/verification.png"
 import MoneyTransfer from "../../img/moneytransfer.png"
 import BillPayment from "../../img/billpayment.png"
-import AccountStatement from "../../img/accountstatement.png"
-
+import AccountStatement from "../../img/account-statement.png"
+import BlockAccount from "../../img/blockaccount.png"
+import ChangePassword from "../../img/change-pwd.png"
+import { Link } from "react-router-dom";
 
 class Cards extends Component {
   render() {
@@ -24,35 +26,49 @@ class Cards extends Component {
 
             <div className="col-md-12 col-sm-12 ff" id="first">
               <Card2
-                imgsrc="https://images.unsplash.com/photo-1560523159-6b681a1e1852?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                title="KEYNOTE SESSION"
-                content="A Conference or convocation and outlined the themes to be covered in ways that got the participants talking and thinking along the right lines."
+                title="Customer Name"
               />
             </div>
-            <div className="col-md-3 col-sm-12 ss" id="sec">
-              <Card
-                imgsrc={Verification}
-                title="Verification"
-                content="The inviter generally sends the invitee a personal note or gives them a call, asks if they’d like to talk at a particular event, and relays details about the event."
-              />
-            </div>
-            <div className="col-md-3 col-sm-12 ss" id="first">
+            
+            <div className="col-md-2 col-sm-12 ss" id="first">
+            <Link to="/account-statement">
               <Card
                 imgsrc={AccountStatement}
                 title="Account Statement"
               />
+              </Link>
             </div>
-            <div className="col-md-3 col-sm-12 ss" id="sec">
+            <div className="col-md-2 col-sm-12 ss" id="sec">
+            <Link to="/transfer">
               <Card
                 imgsrc={MoneyTransfer}
                 title="Money Transfer"
               />
+              </Link>
             </div>
-            <div className="col-md-3 col-sm-12 ss" id="sec">
+            <div className="col-md-2 col-sm-12 ss" id="first">
+            <Link to="/bill">
               <Card
                 imgsrc={BillPayment}
                 title="Bill Payment"
               />
+              </Link>
+            </div>
+            <div className="col-md-2 col-sm-12 ss" id="sec">
+            <Link to="/block-account">
+              <Card
+                imgsrc={BlockAccount}
+                title="Block Account"
+              />
+              </Link>
+            </div>
+            <div className="col-md-2 col-sm-12 ss" id="first">
+            <Link to="/change-pwd">
+              <Card
+                imgsrc={ChangePassword}
+                title="Change Password"
+              />
+              </Link>
             </div>
           </div>
         </div>
