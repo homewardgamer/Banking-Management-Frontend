@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import ImgBill from "../../img/payy-removebg-preview.png"
 import "../../css/bill.css"
-
+{/* <a href='https://www.freepik.com/photos/password-security'>Password security photo created by freepik - www.freepik.com</a> */}
+{/* <a href='https://www.freepik.com/photos/using-laptop'>Using laptop photo created by freepik - www.freepik.com</a> */}
 export default class Login extends Component {
   render() {
     return (
-      <form  style={{backgroundColor: " #85586F",marginTop: "7rem",paddingBottom: "3rem"}}>
+      <form  style={{backgroundColor: " #85586F",marginTop: "5rem",paddingBottom: "3rem"}}>
         <section>
   <div className="container cc" id="container">
     <div className="form-container sign-in-container">

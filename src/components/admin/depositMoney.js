@@ -5,7 +5,7 @@ import "../../css/bill.css"
 export default class Login extends Component {
   render() {
     return (
-      <form style={{backgroundColor: " #85586F",marginTop: "7rem",paddingBottom: "3rem"}}>
+      <form style={{backgroundColor: " #85586F",marginTop: "5rem",paddingBottom: "3rem"}}>
         <section>
   <div className="container cc" id="container">
     <div className="form-container sign-in-container">

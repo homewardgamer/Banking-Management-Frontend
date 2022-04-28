@@ -10,7 +10,7 @@ class Cards extends Component {
 
       <div style={{marginTop: "5rem"}}>
         <div
-          className="container-fluid d-flex justify-content-center"
+          className="container-fluid d-flex justify-content-space around"
           id="scards"
         >
           {/* <img className="background" src="https://www.imagesource.com/wp-content/uploads/2019/06/Rio.jpg" alt="Aleq"></img> */}
