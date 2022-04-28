@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import ImgBill from "../../img/payy-removebg-preview.png"
 import "../../css/bill.css"
-{/* <a href='https://www.freepik.com/photos/password-security'>Password security photo created by freepik - www.freepik.com</a> */}
-{/* <a href='https://www.freepik.com/photos/using-laptop'>Using laptop photo created by freepik - www.freepik.com</a> */}
+
 export default class Login extends Component {
   render() {
     return (

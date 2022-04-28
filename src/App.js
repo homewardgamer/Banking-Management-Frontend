@@ -21,6 +21,7 @@ import Transfer from "./components/customer/moneytransfer"
 import Deposit from "./components/admin/depositMoney"
 import Withdraw from "./components/admin/withdrawMoney"
 import Verify from "./components/customer/verification"
+import Home from "./home.js"
 
 function App() {
   return (
@@ -33,6 +34,11 @@ function App() {
             </Link>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                  <Link className="nav-link" to={'/home'}>
+                    Home
+                  </Link>
+                </li>
                 <li className="nav-item">
                   <Link className="nav-link" to={'/cus-sign-in'}>
                     Customer Login
@@ -103,16 +109,17 @@ function App() {
         <div>
           <div>
             <Routes>
-              <Route exact path="/" element={<CustomerLogin />} />
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/home" element={<Home />} />
               <Route path="/cus-sign-in" element={<CustomerLogin />} />
               <Route path="/admin-sign-in" element={<AdminLogin />} />
               <Route path="/change-pwd" element={<ChangePassword />} />
               {/* below routes are just for check */}
-              <Route path="bill" element={<Bill/>}/>
-              <Route path="transfer" element={<Transfer/>}/>
-              <Route path="deposit" element={<Deposit/>}/>
-              <Route path="withdraw" element={<Withdraw/>}/>
-              <Route path="verify" element={<Verify/>}/>
+              <Route path="/bill" element={<Bill/>}/>
+              <Route path="/transfer" element={<Transfer/>}/>
+              <Route path="/deposit" element={<Deposit/>}/>
+              <Route path="/withdraw" element={<Withdraw/>}/>
+              <Route path="/verify" element={<Verify/>}/>
               <Route path="/customer" element={<Customer/>}/>
               <Route path="/admin" element={<Admin/>}/>
               <Route path="/block-account" element={<BlockAccount/>}/>
