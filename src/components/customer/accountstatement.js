@@ -8,7 +8,7 @@ export default class AccountStatement extends Component {
         <h3>Generate Account Statement</h3>
 
         <div className="mb-3">
-          <label>Account Number</label>
+          {/* <label>Account Number</label> */}
           <input
             type="number"
             className="form-control"
@@ -17,7 +17,7 @@ export default class AccountStatement extends Component {
         </div>
 
         <div className="mb-3">
-          <label>Start Date</label>
+          {/* <label>Start Date</label> */}
           <input
             type="date"
             className="form-control"
@@ -26,7 +26,7 @@ export default class AccountStatement extends Component {
         </div>
 
         <div className="mb-3">
-          <label>End Date</label>
+          {/* <label>End Date</label> */}
           <input
             type="date"
             className="form-control"
