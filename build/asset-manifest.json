@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.fdcc4549.css",
-    "main.js": "/static/js/main.8b597dea.js",
+    "main.css": "/static/css/main.4f5880e9.css",
+    "main.js": "/static/js/main.d8f4da12.js",
+    "static/media/withdraw.png": "/static/media/withdraw.f3fb96746b5f22627037.png",
     "static/media/payy-removebg-preview.png": "/static/media/payy-removebg-preview.1b3fe2d6d0dda22f509c.png",
     "static/media/ImgBill.png": "/static/media/ImgBill.959c263da5710519e4d7.png",
+    "static/media/addBranch.png": "/static/media/addBranch.54882976d50542eddf7a.png",
     "static/media/verifi-removebg-preview.png": "/static/media/verifi-removebg-preview.33c5582ac8f5b66051aa.png",
+    "static/media/deposit.png": "/static/media/deposit.7264e781ca94c37c61d8.png",
     "static/media/deposit2-removebg-preview.png": "/static/media/deposit2-removebg-preview.dc046c20a79117927de7.png",
-    "static/media/accountstatement.png": "/static/media/accountstatement.c9b459f7946746b5f72b.png",
     "static/media/withdraw-money-removebg-preview.png": "/static/media/withdraw-money-removebg-preview.7a6b3082642ceabff299.png",
-    "static/media/verification.png": "/static/media/verification.df38c5364d950b6c0f7b.png",
     "static/media/billpayment.png": "/static/media/billpayment.4f06075325ed3669ee32.png",
+    "static/media/editCustInfo.png": "/static/media/editCustInfo.5096adc6c8b0bf81b835.png",
+    "static/media/account-statement.png": "/static/media/account-statement.3d12d2d59cb047bbe64d.png",
+    "static/media/addEmployee.png": "/static/media/addEmployee.380f8accd31f7753f628.png",
+    "static/media/CustomerDetails.png": "/static/media/CustomerDetails.f08676ab49d3f7ba48c7.png",
+    "static/media/change-pwd.png": "/static/media/change-pwd.86d82b6db4204d463787.png",
+    "static/media/blockaccount.png": "/static/media/blockaccount.0ccc2076deb1cde9e7f0.png",
     "static/media/moneytransfer.png": "/static/media/moneytransfer.d0197cdddba33d917479.png",
     "index.html": "/index.html",
-    "main.fdcc4549.css.map": "/static/css/main.fdcc4549.css.map",
-    "main.8b597dea.js.map": "/static/js/main.8b597dea.js.map"
+    "main.4f5880e9.css.map": "/static/css/main.4f5880e9.css.map",
+    "main.d8f4da12.js.map": "/static/js/main.d8f4da12.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdcc4549.css",
-    "static/js/main.8b597dea.js"
+    "static/css/main.4f5880e9.css",
+    "static/js/main.d8f4da12.js"
   ]
 }
