@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.7af74e40.css",
+    "main.css": "/static/css/main.cf15f23c.css",
     "main.js": "/static/js/main.8b0c85ab.js",
     "static/media/payy-removebg-preview.png": "/static/media/payy-removebg-preview.1b3fe2d6d0dda22f509c.png",
     "static/media/ImgBill.png": "/static/media/ImgBill.959c263da5710519e4d7.png",
@@ -8,11 +8,11 @@
     "static/media/deposit2-removebg-preview.png": "/static/media/deposit2-removebg-preview.dc046c20a79117927de7.png",
     "static/media/withdraw-money-removebg-preview.png": "/static/media/withdraw-money-removebg-preview.7a6b3082642ceabff299.png",
     "index.html": "/index.html",
-    "main.7af74e40.css.map": "/static/css/main.7af74e40.css.map",
+    "main.cf15f23c.css.map": "/static/css/main.cf15f23c.css.map",
     "main.8b0c85ab.js.map": "/static/js/main.8b0c85ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.7af74e40.css",
+    "static/css/main.cf15f23c.css",
     "static/js/main.8b0c85ab.js"
   ]
 }
