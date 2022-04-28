@@ -31,13 +31,14 @@ function Dashboard() {
 
             <ul id="request-head" className="navbar-nav mr-0 mt-2 mt-lg-0">
               <li className="nav-item d-none d-md-block">
+              <Link to="/sign-in">
                 <button
                   id="header-request-invite-btn"
                   type="button"
-                  className="btn btn-lg rounded-pill text-white bg-green-cyan font-weight-bold request-btns"
-                >
+                  className="btn btn-lg rounded-pill text-white bg-green-cyan font-weight-bold request-btns">
                   Login
                 </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -73,7 +74,7 @@ function Dashboard() {
               one-stop-shop for spending, saving, budgeting, investing, and much
               more.
             </p>
-            <Link to="/cus-sign-in">
+            <Link to="/sign-in">
               <button
                 id="request-invite-btn"
                 type="button"

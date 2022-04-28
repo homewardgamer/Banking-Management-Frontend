@@ -12,17 +12,12 @@ function Navbar() {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link className="nav-link" to={"/home"}>
-                Home
+                Logout
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to={"/cus-sign-in"}>
-                Customer Login
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={"/admin-sign-in"}>
-                Admin Login
+              <Link className="nav-link" to={"/sign-in"}>
+               Login
               </Link>
             </li>
             <li className="nav-item">

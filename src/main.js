@@ -1,8 +1,7 @@
 import React from "react";
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
-import CustomerLogin from "./components/login.customer";
-import AdminLogin from "./components/login.admin";
+import Login from "./components/login.customer";
 import ChangePassword from "./components/changepwd";
 import BlockAccount from "./components/customer/blockaccount";
 import EditAccount from "./components/admin/editcustomerinfo";
@@ -26,9 +25,9 @@ const Main = () => {
     <Routes>
       {/* The Switch decides which component to show based on the current URL.*/}
       <Route path="/" element={<Dashboard />} />
+      <Route path="/home" element={<Dashboard />} />
       {/* <Route exact path="/home" element={<Home />} /> */}
-      <Route path="/cus-sign-in" element={<CustomerLogin />} />
-      <Route path="/admin-sign-in" element={<AdminLogin />} />
+      <Route path="/sign-in" element={<Login />} />
       <Route path="/change-pwd" element={<ChangePassword />} />
       {/* below routes are just for check */}
       <Route path="/bill" element={<Bill />} />
@@ -45,8 +44,6 @@ const Main = () => {
       <Route path="/new-employee" element={<NewEmployee />} />
       <Route path="/branch-customer" element={<BranchCustomer />} />
       <Route path="/account-statement" element={<AccountStatement />} />{" "}
-      <Route path="/admin-sign-in" element={<AdminLogin />} />
-      <Route path="/change-pwd" element={<ChangePassword />} />
     </Routes>
   );
 };
