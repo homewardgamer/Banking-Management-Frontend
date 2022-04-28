@@ -1,7 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.cf15f23c.css",
+<<<<<<< HEAD
+    "main.js": "/static/js/main.8b0c85ab.js",
+=======
     "main.js": "/static/js/main.63c26f2f.js",
+>>>>>>> c149711f22c5fca898aad26a22cedcaf009d5d07
     "static/media/payy-removebg-preview.png": "/static/media/payy-removebg-preview.1b3fe2d6d0dda22f509c.png",
     "static/media/ImgBill.png": "/static/media/ImgBill.959c263da5710519e4d7.png",
     "static/media/verifi-removebg-preview.png": "/static/media/verifi-removebg-preview.33c5582ac8f5b66051aa.png",
@@ -9,10 +13,18 @@
     "static/media/withdraw-money-removebg-preview.png": "/static/media/withdraw-money-removebg-preview.7a6b3082642ceabff299.png",
     "index.html": "/index.html",
     "main.cf15f23c.css.map": "/static/css/main.cf15f23c.css.map",
+<<<<<<< HEAD
+    "main.8b0c85ab.js.map": "/static/js/main.8b0c85ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf15f23c.css",
+    "static/js/main.8b0c85ab.js"
+=======
     "main.63c26f2f.js.map": "/static/js/main.63c26f2f.js.map"
   },
   "entrypoints": [
     "static/css/main.cf15f23c.css",
     "static/js/main.63c26f2f.js"
+>>>>>>> c149711f22c5fca898aad26a22cedcaf009d5d07
   ]
 }
