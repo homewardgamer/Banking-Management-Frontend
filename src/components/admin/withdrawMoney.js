@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import ImgBill from "../../img/withdraw-money-removebg-preview.png"
 import "../../css/bill.css"
+import NavbarAdmin from '../navbaradmin'
 
 export default class Login extends Component {
   render() {
     return (
+      <div>
+      <NavbarAdmin/>
       <form style={{backgroundColor: " #85586F",marginTop: "5rem",paddingBottom: "3rem"}}>
         <section>
   <div className="container cc" id="container">
@@ -54,6 +57,7 @@ export default class Login extends Component {
 </div>
 </section>
       </form>
+      </div>
     )
   }
 }

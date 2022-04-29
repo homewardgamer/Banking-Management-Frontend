@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
+import NavbarAdmin from '../navbaradmin'
 
 export default class SeeAccount extends Component {
   render() {
     return (
+      <div>
+      <NavbarAdmin/>
     <div className="auth-wrapper">
       <form className="auth-inner">
         <h3>See Account Information</h3>
@@ -12,7 +15,7 @@ export default class SeeAccount extends Component {
           <input
             type="number"
             className="form-control"
-            placeholder="First name"
+            placeholder="Account Number"
           />
         </div>
 
@@ -23,6 +26,7 @@ export default class SeeAccount extends Component {
         </div>
         
       </form>
+      </div>
       </div>
     )
   }

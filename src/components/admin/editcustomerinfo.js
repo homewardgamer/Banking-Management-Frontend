@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
+import NavbarAdmin from '../navbaradmin'
 
 export default class EditAccount extends Component {
   render() {
     return (
+      <div>
+      <NavbarAdmin/>
     <div className="auth-wrapper">
       <form className='auth-inner'>
         <h3>Edit Account Information</h3>
@@ -81,6 +84,7 @@ export default class EditAccount extends Component {
           </button>
         </div>
       </form>
+    </div>
     </div>
     )
   }

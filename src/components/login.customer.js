@@ -10,9 +10,9 @@ export default class Login extends Component {
         <div className="mb-3">
           {/* <label>Account Number</label> */}
           <input
-            type="number"
+            type="text"
             className="form-control"
-            placeholder="Enter Account Number"
+            placeholder="Enter Username"
           />
         </div>
 
@@ -21,7 +21,7 @@ export default class Login extends Component {
           <input
             type="password"
             className="form-control"
-            placeholder="Enter password"
+            placeholder="Enter Password"
           />
         </div>
 

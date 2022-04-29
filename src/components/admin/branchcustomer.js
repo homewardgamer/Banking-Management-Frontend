@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-
+import NavbarAdmin from '../navbaradmin'
 export default class NewBranch extends Component {
   render() {
     return (
+      <div>
+      <NavbarAdmin/>
     <div className="changepwd auth-wrapper">
       <form className="auth-inner">
         <h3>Branch Customers</h3>
@@ -22,6 +24,7 @@ export default class NewBranch extends Component {
           </button>
         </div>
       </form>
+      </div>
       </div>
     )
   }
