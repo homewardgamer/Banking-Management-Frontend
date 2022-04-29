@@ -1,8 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
+import NavbarCustomer from '../navbarcus'
 
-export default class AccountStatement extends Component {
-  render() {
+
+
+function AccountStatement (){
     return (
+      <div>
+      <NavbarCustomer/>
     <div className="auth-wrapper">
       <form className='auth-inner'>
         <h3>Generate Account Statement</h3>
@@ -42,6 +46,8 @@ export default class AccountStatement extends Component {
         </div>
       </form>
     </div>
+    </div>
     )
-  }
 }
+
+export default AccountStatement;
