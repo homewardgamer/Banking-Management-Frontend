@@ -1,8 +1,31 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
+import NavbarCustomer from '../navbarcus'
+import Axios from "axios";
 import NavbarAdmin from '../navbaradmin'
 
-export default class SeeAccount extends Component {
-  render() {
+// account_detail_by_id
+function SeeAccount(){
+
+  var [s_account, setAccountNumber] = useState("");
+
+  function handleAccountNumChange(event) {
+    const value = event.target.value;
+    setAccountNumber(value);
+  }
+
+  
+  function seeAccountApi(event) {
+    const url = "http://localhost:8000/api/account/view/{account_id}";
+    const data = {s_account: s_account};
+    const token = localStorage.getItem('token');
+    Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        alert(err);
+      });
+  }
     return (
       <div>
       <NavbarAdmin/>
@@ -16,6 +39,7 @@ export default class SeeAccount extends Component {
             type="number"
             className="form-control"
             placeholder="Account Number"
+            onchange={handleAccountNumChange}
           />
         </div>
 
@@ -30,4 +54,5 @@ export default class SeeAccount extends Component {
       </div>
     )
   }
-}
+
+  export default SeeAccount;
