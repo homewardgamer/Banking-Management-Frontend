@@ -1,20 +1,18 @@
 import React, { Component } from 'react'
-
+import { Link } from 'react-router-dom'
 export default class Login extends Component {
   render() {
     return (
-      <div className="logg">
       <div  className="auth-wrapper">
       <form className="auth-inner">
-        <h3>Admin Log In</h3>
+        <h3>Log In</h3>
 
         <div className="mb-3">
-
           {/* <label>Account Number</label> */}
           <input
-            type="number"
+            type="text"
             className="form-control"
-            placeholder="Enter Account Number"
+            placeholder="Enter Username"
           />
         </div>
 
@@ -23,7 +21,7 @@ export default class Login extends Component {
           <input
             type="password"
             className="form-control"
-            placeholder="Enter password"
+            placeholder="Enter Password"
           />
         </div>
 
@@ -41,15 +39,16 @@ export default class Login extends Component {
         </div>
 
         <div className="d-grid">
+        <Link to="/customer">
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
+          </Link>
         </div>
         <p className="forgot-password text-right">
           Forgot <a href="/">password?</a>
         </p>
       </form>
-      </div>
       </div>
     )
   }

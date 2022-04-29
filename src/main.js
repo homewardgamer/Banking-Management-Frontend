@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Login from "./components/login.customer";
+import Login from "./components/login";
 import ChangePassword from "./components/changepwd";
 import BlockAccount from "./components/customer/blockaccount";
 import EditAccount from "./components/admin/editcustomerinfo";
@@ -10,7 +10,6 @@ import NewBranch from "./components/admin/newbranch";
 import NewEmployee from "./components/admin/employeeinfo";
 import BranchCustomer from "./components/admin/branchcustomer";
 import AccountStatement from "./components/customer/accountstatement";
-
 import Admin from "./admin";
 import Customer from "./customer";
 import Bill from "./components/customer/billpayment";
