@@ -10,37 +10,12 @@ function NavbarAdmin() {
         </Link>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <Link className="nav-link" to={"/home"}>
-                Logout
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={"/sign-in"}>
-               Login
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={"/change-pwd"}>
-                Change Pwd
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={"/customer"}>
-                Customer
-              </Link>
-            </li>
+            
             <li className="nav-item">
               <Link className="nav-link" to={"/admin"}>
-                Admin
+                Dashboard
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={"/account-statement"}>
-                Account Statement
-              </Link>
-            </li>
-            {/*
                 <li className="nav-item">
                   <Link className="nav-link" to={'/new-branch'}>
                     New Branch
@@ -57,20 +32,35 @@ function NavbarAdmin() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={'/block-account'}>
-                    Block Account
+                  <Link className="nav-link" to={'/edit-account-info'}>
+                    Edit Account Info
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={'/edit-account-info'}>
-                    Edit Account Info
+                  <Link className="nav-link" to={'/deposit'}>
+                    Deposit
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to={'/withdraw'}>
+                    Withdraw
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to={'/see-account-info'}>
                     See Account Info
                   </Link>
-                </li> */}
+                </li>
+            <li className="nav-item">
+              <Link className="nav-link" to={"/change-pwd"}>
+                Change Pwd
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to={"/home"}>
+                Logout
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

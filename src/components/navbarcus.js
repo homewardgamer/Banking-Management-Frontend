@@ -10,14 +10,30 @@ function NavbarCustomer() {
         </Link>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav ml-auto">
+            
             <li className="nav-item">
-              <Link className="nav-link" to={"/home"}>
-                Logout
+              <Link className="nav-link" to={"/customer"}>
+                Dashboard
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to={"/sign-in"}>
-               Login
+              <Link className="nav-link" to={"/account-statement"}>
+                Account Statement
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to={'/transfer'}>
+                Money Transfer
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to={'/bill'}>
+                Bill Payment
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to={'/block-account'}>
+                Block Account
               </Link>
             </li>
             <li className="nav-item">
@@ -26,51 +42,10 @@ function NavbarCustomer() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to={"/customer"}>
-                Customer
+              <Link className="nav-link" to={"/home"}>
+                Logout
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={"/admin"}>
-                Admin
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={"/account-statement"}>
-                Account Statement
-              </Link>
-            </li>
-            {/*
-                <li className="nav-item">
-                  <Link className="nav-link" to={'/new-branch'}>
-                    New Branch
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to={'/new-employee'}>
-                    New Employee
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to={'/branch-customer'}>
-                    Branch Customer
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to={'/block-account'}>
-                    Block Account
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to={'/edit-account-info'}>
-                    Edit Account Info
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to={'/see-account-info'}>
-                    See Account Info
-                  </Link>
-                </li> */}
           </ul>
         </div>
       </div>
