@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import Axios from "axios";
 function Login() {
   var [username, setUsername] = useState("");
   var [password, setPassword] = useState("");
+  var [redirectUrl, setredirectUrl] = useState("");
 
   function handleUserChange(event) {
     const value = event.target.value;
@@ -18,9 +19,34 @@ function Login() {
     const data = { username: username, password: password };
     Axios.post(url, data)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
+        const token = res.data.token;
+        console.log(`Token ${token}`);
+        localStorage.setItem("token", token);
+        fetchUser(token);
       })
       .catch((err) => {
+        alert(err);
+      });
+  }
+  function fetchUser(token) {
+    const newUrl = "http://localhost:8000/api/user/view";
+    Axios.get(newUrl, {
+      headers: {
+        Authorization: `Token ${token}`,
+      },
+    })
+      .then((res) => {
+        console.log(res.data);
+        const data = res.data;
+        if (res.data.is_employee) {
+          setredirectUrl("/admin");
+        } else {
+          setredirectUrl("/customer");
+        }
+      })
+      .catch((err) => {
+        console.log(err);
         alert(err);
       });
   }
@@ -64,7 +90,7 @@ function Login() {
         </div>
 
         <div className="d-grid">
-          <Link to="/customer">
+          <Link to={redirectUrl}>
             <button
               type="submit"
               className="btn btn-primary"
