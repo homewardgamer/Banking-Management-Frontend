@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.4f5880e9.css",
-    "main.js": "/static/js/main.d8f4da12.js",
-    "static/media/withdraw.png": "/static/media/withdraw.f3fb96746b5f22627037.png",
+    "main.js": "/static/js/main.b9360d4c.js",
     "static/media/payy-removebg-preview.png": "/static/media/payy-removebg-preview.1b3fe2d6d0dda22f509c.png",
     "static/media/ImgBill.png": "/static/media/ImgBill.959c263da5710519e4d7.png",
     "static/media/addBranch.png": "/static/media/addBranch.54882976d50542eddf7a.png",
     "static/media/verifi-removebg-preview.png": "/static/media/verifi-removebg-preview.33c5582ac8f5b66051aa.png",
-    "static/media/deposit.png": "/static/media/deposit.7264e781ca94c37c61d8.png",
     "static/media/deposit2-removebg-preview.png": "/static/media/deposit2-removebg-preview.dc046c20a79117927de7.png",
+    "static/media/deposit.png": "/static/media/deposit.f65eacb82a60af9e79df.png",
     "static/media/withdraw-money-removebg-preview.png": "/static/media/withdraw-money-removebg-preview.7a6b3082642ceabff299.png",
     "static/media/billpayment.png": "/static/media/billpayment.4f06075325ed3669ee32.png",
     "static/media/editCustInfo.png": "/static/media/editCustInfo.5096adc6c8b0bf81b835.png",
@@ -17,13 +16,14 @@
     "static/media/CustomerDetails.png": "/static/media/CustomerDetails.f08676ab49d3f7ba48c7.png",
     "static/media/change-pwd.png": "/static/media/change-pwd.86d82b6db4204d463787.png",
     "static/media/blockaccount.png": "/static/media/blockaccount.0ccc2076deb1cde9e7f0.png",
+    "static/media/withdraw.png": "/static/media/withdraw.d48afc520ecde7855e77.png",
     "static/media/moneytransfer.png": "/static/media/moneytransfer.d0197cdddba33d917479.png",
     "index.html": "/index.html",
     "main.4f5880e9.css.map": "/static/css/main.4f5880e9.css.map",
-    "main.d8f4da12.js.map": "/static/js/main.d8f4da12.js.map"
+    "main.b9360d4c.js.map": "/static/js/main.b9360d4c.js.map"
   },
   "entrypoints": [
     "static/css/main.4f5880e9.css",
-    "static/js/main.d8f4da12.js"
+    "static/js/main.b9360d4c.js"
   ]
 }
