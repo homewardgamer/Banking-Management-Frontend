@@ -38,17 +38,12 @@ function Login() {
     })
       .then((res) => {
         console.log(res.data);
-<<<<<<< HEAD
         const data = res.data;
         if (res.data.is_employee) {
           setredirectUrl("/admin");
         } else {
           setredirectUrl("/customer");
         }
-=======
-        const token = res.data.token;
-        localStorage.setItem('token',token);
->>>>>>> 22b5fc74c3da0d47800f084292293e5c7b32c519
       })
       .catch((err) => {
         console.log(err);
