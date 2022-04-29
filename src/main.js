@@ -18,6 +18,8 @@ import Deposit from "./components/admin/depositMoney";
 import Withdraw from "./components/admin/withdrawMoney";
 import Verify from "./components/customer/verification";
 import Dashboard from "./home.js";
+import Register from "./registercus";
+import CreateAccount from "./components/admin/createaccount";
 
 const Main = () => {
   return (
@@ -42,6 +44,8 @@ const Main = () => {
       <Route path="/new-branch" element={<NewBranch />} />
       <Route path="/new-employee" element={<NewEmployee />} />
       <Route path="/branch-customer" element={<BranchCustomer />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/create-account" element={<CreateAccount />} />
       <Route path="/account-statement" element={<AccountStatement />} />{" "}
     </Routes>
   );

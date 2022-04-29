@@ -40,6 +40,17 @@ function Dashboard() {
                 </button>
                 </Link>
               </li>
+              <li className="nav-item d-none d-md-block">
+              <Link to="/register">
+                <button
+                  id="header-request-invite-btn"
+                  type="button"
+                  className="btn btn-lg rounded-pill text-white bg-green-cyan font-weight-bold request-btns">
+                  Register
+                </button>
+                </Link>
+              </li>
+              
             </ul>
           </div>
         </nav>
@@ -81,6 +92,13 @@ function Dashboard() {
                 className="btn btn-lg rounded-pill text-white bg-green-cyan ml-auto mr-auto ml-md-0 mr-md-0 request-btns"
               >
                 Login
+              </button>
+            </Link>
+            <Link to="/register">
+              <button
+                id="request-invite-btn"
+                type="button"
+                className="btn btn-lg rounded-pill text-white bg-green-cyan ml-auto mr-auto ml-md-0 mr-md-0 request-btns">Register
               </button>
             </Link>
           </div>
