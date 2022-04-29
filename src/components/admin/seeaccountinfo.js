@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
-import NavbarCustomer from '../navbarcus'
 import Axios from "axios";
 import NavbarAdmin from '../navbaradmin'
 
 // account_detail_by_id
 function SeeAccount(){
-
-  var [s_account, setAccountNumber] = useState("");
+var [s_account, setAccountNumber] = useState("");
 
   function handleAccountNumChange(event) {
     const value = event.target.value;
@@ -44,7 +42,7 @@ function SeeAccount(){
         </div>
 
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary" onClick={seeAccountApi}>
             See Account Information
           </button>
         </div>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import NavbarCustomer from '../navbarcus'
 import Axios from "axios";
 import NavbarAdmin from "../navbaradmin";
 
@@ -9,6 +8,7 @@ function EditAccount() {
   var [email, setEmail] = useState("");
   var [address, setAddress] = useState("");
   var [dob, setDOB] = useState("");
+  
 
   function handleFirstChange(event) {
     const value = event.target.value;
@@ -104,7 +104,7 @@ function EditAccount() {
           </div>
 
           <div className="d-grid">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary" onClick={EditCustomerApi}>
               Edit the Information
             </button>
           </div>

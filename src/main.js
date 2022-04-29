@@ -7,7 +7,7 @@ import BlockAccount from "./components/customer/blockaccount";
 import EditAccount from "./components/admin/editcustomerinfo";
 import SeeAccount from "./components/admin/seeaccountinfo";
 import NewBranch from "./components/admin/newbranch";
-import NewEmployee from "./components/admin/employeeinfo";
+import NewEmployee from "./components/admin/newemployee";
 import BranchCustomer from "./components/admin/branchcustomer";
 import AccountStatement from "./components/customer/accountstatement";
 import Admin from "./admin";

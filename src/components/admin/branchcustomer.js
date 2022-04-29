@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import NavbarCustomer from '../navbarcus'
 import Axios from "axios";
 import NavbarAdmin from '../navbaradmin'
 function NewBranch(){
@@ -11,7 +10,7 @@ function NewBranch(){
     setBranchId(value);
   }
 
-  function NewBranchApi(event) {
+  function BranchCusApi(event) {
     const url = "http://localhost:8000/api/branch/customers";
     const data = {branch_id: branch_id};
     const token = localStorage.getItem('token');
@@ -42,7 +41,7 @@ function NewBranch(){
         </div>
 
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary" onClick={BranchCusApi}>
             Get Customer Details
           </button>
         </div>

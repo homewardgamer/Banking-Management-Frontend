@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import NavbarCustomer from '../navbarcus'
 import Axios from "axios";
 import ImgBill from "../../img/deposit2-removebg-preview.png";
 import "../../css/bill.css";
@@ -87,7 +86,7 @@ function DepositMoney() {
                     onChange={handleAmountChange}
                   />
                 </div>
-                <button type="submit" className="btn bb">
+                <button type="submit" className="btn bb" onClick={depositApi}>
                   DEPOSIT
                 </button>
               </form>

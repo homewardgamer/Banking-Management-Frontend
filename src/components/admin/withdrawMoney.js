@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import NavbarCustomer from '../navbarcus'
 import Axios from "axios";
 import ImgBill from "../../img/withdraw-money-removebg-preview.png";
 import "../../css/bill.css";
@@ -89,7 +88,7 @@ function WithdrawMoney() {
                   />
                 </div>
                
-                <button type="submit" className="btn bb">
+                <button type="submit" className="btn bb" onClick={withdrawApi}>
                   WITHDRAW
                 </button>
               </form>
