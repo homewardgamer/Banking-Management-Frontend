@@ -19,6 +19,8 @@ function Login() {
     Axios.post(url, data)
       .then((res) => {
         console.log(res.data);
+        const token = res.data.token;
+        localStorage.setItem('token',token);
       })
       .catch((err) => {
         alert(err);

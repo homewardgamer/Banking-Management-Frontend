@@ -3,7 +3,6 @@ import NavbarCustomer from '../navbarcus'
 import Axios from "axios";
 
 function BlockAccount(){
-
     var [account_id, setAccount] = useState("");
     var [pin, setPin] = useState("");
   
@@ -17,8 +16,10 @@ function BlockAccount(){
     }
     function DisableAccountApi(event) {
       const url = "http://localhost:8000/api/account/disable/{account_id}";
+      
       const data = { account_id: account_id, pin: pin };
-      Axios.post(url, data)
+      const token = localStorage.getItem('token');
+      Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
         .then((res) => {
           console.log(res.data);
         })
