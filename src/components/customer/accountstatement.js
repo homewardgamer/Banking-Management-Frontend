@@ -1,7 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import NavbarCustomer from '../navbarcus'
-export default class AccountStatement extends Component {
-  render() {
+
+
+
+function AccountStatement (){
     return (
       <div>
       <NavbarCustomer/>
@@ -46,5 +48,6 @@ export default class AccountStatement extends Component {
     </div>
     </div>
     )
-  }
 }
+
+export default AccountStatement;

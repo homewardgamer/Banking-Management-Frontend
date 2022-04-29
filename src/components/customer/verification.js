@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ImgBill from "../../img/verifi-removebg-preview.png"
 import "../../css/bill.css"
 
-export default class Login extends Component {
-  render() {
+function Verification () {
     return (
       <form style={{backgroundColor: " #85586F",marginTop: "5rem",paddingBottom: "3rem"}}>
         <section>
@@ -41,5 +40,5 @@ export default class Login extends Component {
       </form>
     )
   }
-}
 
+export default Verification;
