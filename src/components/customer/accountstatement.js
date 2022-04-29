@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-
+import NavbarCustomer from '../navbarcus'
 export default class AccountStatement extends Component {
   render() {
     return (
+      <div>
+      <NavbarCustomer/>
     <div className="auth-wrapper">
       <form className='auth-inner'>
         <h3>Generate Account Statement</h3>
@@ -41,6 +43,7 @@ export default class AccountStatement extends Component {
           </button>
         </div>
       </form>
+    </div>
     </div>
     )
   }

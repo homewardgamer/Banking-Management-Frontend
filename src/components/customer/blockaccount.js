@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
+import NavbarCustomer from '../navbarcus'
 
 export default class BlockAccount extends Component {
   render() {
     return (
+      <div>
+      <NavbarCustomer/>
     <div className="changepwd auth-wrapper">
       <form className="auth-inner">
         <h3>Block Account</h3>
@@ -38,6 +41,7 @@ export default class BlockAccount extends Component {
           </button>
         </div>
       </form>
+      </div>
       </div>
     )
   }
