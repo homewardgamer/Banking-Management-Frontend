@@ -1,6 +1,6 @@
 import NavbarAdmin from '../navbaradmin'
 import React,{useState} from 'react'
-import Register from "../../img/register.jpg"
+import Register from "../../img/register-removebg-preview.png"
 import "../../css/bill.css"
 import Axios from "axios";
 import { Link } from 'react-router-dom';

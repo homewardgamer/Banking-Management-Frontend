@@ -32,7 +32,7 @@ function Dashboard() {
             <ul id="request-head" className="navbar-nav mr-0 mt-2 mt-lg-0">
               <li className="nav-item d-none d-md-block">
               <Link to="/sign-in">
-                <button
+                <button style={{marginRight: "2rem"}}
                   id="header-request-invite-btn"
                   type="button"
                   className="btn btn-lg rounded-pill text-white bg-green-cyan font-weight-bold request-btns">
@@ -86,7 +86,7 @@ function Dashboard() {
               more.
             </p>
             <Link to="/sign-in">
-              <button
+            <button
                 id="request-invite-btn"
                 type="button"
                 className="btn btn-lg rounded-pill text-white bg-green-cyan ml-auto mr-auto ml-md-0 mr-md-0 request-btns"
@@ -94,6 +94,7 @@ function Dashboard() {
                 Login
               </button>
             </Link>
+           <br />
             <Link to="/register">
               <button
                 id="request-invite-btn"
