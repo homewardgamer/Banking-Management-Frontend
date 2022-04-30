@@ -43,7 +43,7 @@ function NavbarAdmin() {
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/branch-customer">
-            Branch Customer
+            Branch Customers
             </Link>
           </li>
           <li className="nav-item">
@@ -62,10 +62,11 @@ function NavbarAdmin() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to={'/see-account-info'}>
-                See Account Info
-              </Link>
-            </li>
+            <Link className="nav-link" to="/seecus-accounts">
+              See Customer Accounts
+            </Link>
+          </li>
+            
         <li className="nav-item">
           <Link className="nav-link" to={"/change-pwd"}>
             Change Pwd

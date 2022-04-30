@@ -67,26 +67,21 @@ const data = {
         imageUrl: withdraw,
         note: "Withdraw Money",
       },
+      
       {
         id: 3,
-        colorName: "#BCE6ED",
-        imageUrl: editCustInfo,
-        note: "Customer Info",
-      },
-      {
-        id: 4,
         colorName: "#B3C1F0",
         imageUrl: addEmployee,
         note: "Add Employee",
       },
       {
-        id: 5,
+        id: 4,
         colorName: "#BCE6ED",
         imageUrl: addBranch,
         note: "Add New Branch",
       },
       {
-        id: 6,
+        id: 5,
         colorName: "#FFCECA",
         imageUrl: CustD,
         note: "Branch Customers",

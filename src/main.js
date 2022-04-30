@@ -5,7 +5,7 @@ import Login from "./components/login";
 import ChangePassword from "./components/changepwd";
 import BlockAccount from "./components/customer/blockaccount";
 import EditAccount from "./components/admin/editcustomerinfo";
-import SeeAccount from "./components/admin/seeaccountinfo";
+import SeeAccount from "./components/customer/seeaccountinfo";
 import NewBranch from "./components/admin/newbranch";
 import NewEmployee from "./components/admin/newemployee";
 import BranchCustomer from "./components/admin/branchcustomer";
@@ -20,6 +20,7 @@ import Verify from "./components/customer/verification";
 import Dashboard from "./home.js";
 import Register from "./registercus";
 import CreateAccount from "./components/admin/createaccount";
+import SeeCusAccounts from "./components/admin/seecusaccounts"
 
 const Main = () => {
   return (
@@ -46,6 +47,7 @@ const Main = () => {
       <Route path="/branch-customer" element={<BranchCustomer />} />
       <Route path="/register" element={<Register />} />
       <Route path="/create-account" element={<CreateAccount />} />
+      <Route path="/seecus-accounts" element={<SeeCusAccounts />} />
       <Route path="/account-statement" element={<AccountStatement />} />{" "}
     </Routes>
   );

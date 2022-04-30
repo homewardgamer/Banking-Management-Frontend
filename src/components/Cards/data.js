@@ -48,6 +48,7 @@
 import React from "react";
 import Verification from "../../img/verification.png"
 import MoneyTransfer from "../../img/moneytransfer.png"
+import editCustInfo from "../../img/editCustInfo.png"
 import BillPayment from "../../img/billpayment.png"
 import AccountStatement from "../../img/account-statement.png"
 import BlockAccount from "../../img/blockaccount.png"
@@ -68,27 +69,27 @@ const data = {
       },
       {
         id: 3,
+        colorName: "#FFCECA",
+        imageUrl: editCustInfo,
+        note: "See Account Info",
+      },
+      {
+        id: 4,
         colorName: "#BCE6ED",
         imageUrl: BillPayment,
         note: "Bill Payment",
       },
       {
-        id: 4,
+        id: 5,
         colorName: "#B3C1F0",
         imageUrl: BlockAccount,
         note: "Block Account",
       },
       {
-        id: 5,
+        id: 6,
         colorName: "#BCE6ED",
         imageUrl: ChangePassword,
         note: "Change Password",
-      },
-      {
-        id: 5,
-        colorName: "#FFCECA",
-        imageUrl: Verification,
-        note: "Logout",
       },
   ],
 };

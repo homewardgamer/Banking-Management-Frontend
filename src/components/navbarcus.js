@@ -1,4 +1,4 @@
-import React,{Component} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 function NavBarCus() {
@@ -42,6 +42,11 @@ function NavBarCus() {
                 Bill Payment
                 </Link>
               </li>
+              <li className="nav-item">
+              <Link className="nav-link" to={'/see-account-info'}>
+                See Account Info
+              </Link>
+            </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/block-account">
                   Block Account

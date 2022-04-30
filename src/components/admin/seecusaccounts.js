@@ -3,17 +3,18 @@ import Axios from "axios";
 import NavbarAdmin from '../navbaradmin'
 
 // account_detail_by_id
-function SeeAccount(){
-var [s_account, setAccountNumber] = useState("");
+function SeeCusAccounts(){
+var [id, setCusId] = useState("");
 
   function handleAccountNumChange(event) {
     const value = event.target.value;
-    setAccountNumber(value);
+    setCusId(value);
   }
-  function seeAccountApi(event) {
-    const url = `http://localhost:8000/api/account/view/${s_account}`;
+  function SeeCusAccountsApi(event) {
+    const url = `http://localhost:8000/api/account/list`;
     const token = localStorage.getItem('token');
-    Axios.get(url,{headers: {Authorization: `Token ${token}`}})
+    const data= {id:id};
+    Axios.get(url,data,{headers: {Authorization: `Token ${token}`}})
       .then((res) => {
         console.log(res.data);
       })
@@ -28,21 +29,21 @@ var [s_account, setAccountNumber] = useState("");
       <NavbarAdmin/>
     <div className="auth-wrapper">
       <form className="auth-inner">
-        <h3>See Account Information</h3>
+        <h3>See Customer Accounts</h3>
 
         <div className="mb-3">
           {/* <label>Account Number</label> */}
           <input
             type="number"
             className="form-control"
-            placeholder="Account Number"
+            placeholder="Customer Id"
             onchange={handleAccountNumChange}
           />
         </div>
 
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary" onClick={seeAccountApi}>
-            See Account Information
+          <button type="submit" className="btn btn-primary" onClick={SeeCusAccountsApi}>
+            See Customer Accounts
           </button>
         </div>
         
@@ -56,4 +57,4 @@ var [s_account, setAccountNumber] = useState("");
     }
   }
 
-  export default SeeAccount;
+  export default SeeCusAccounts;
