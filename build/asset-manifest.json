@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f0f51f7.css",
-    "main.js": "/static/js/main.1727aabb.js",
+    "main.css": "/static/css/main.f93d9ef1.css",
+    "main.js": "/static/js/main.d6908f08.js",
     "static/media/payy-removebg-preview.png": "/static/media/payy-removebg-preview.1b3fe2d6d0dda22f509c.png",
     "static/media/ImgBill.png": "/static/media/ImgBill.959c263da5710519e4d7.png",
     "static/media/addBranch.png": "/static/media/addBranch.54882976d50542eddf7a.png",
     "static/media/verifi-removebg-preview.png": "/static/media/verifi-removebg-preview.33c5582ac8f5b66051aa.png",
     "static/media/deposit2-removebg-preview.png": "/static/media/deposit2-removebg-preview.dc046c20a79117927de7.png",
+    "static/media/accountstatement.png": "/static/media/accountstatement.c9b459f7946746b5f72b.png",
     "static/media/deposit.png": "/static/media/deposit.f65eacb82a60af9e79df.png",
     "static/media/withdraw-money-removebg-preview.png": "/static/media/withdraw-money-removebg-preview.7a6b3082642ceabff299.png",
+    "static/media/verification.png": "/static/media/verification.df38c5364d950b6c0f7b.png",
     "static/media/billpayment.png": "/static/media/billpayment.4f06075325ed3669ee32.png",
     "static/media/editCustInfo.png": "/static/media/editCustInfo.5096adc6c8b0bf81b835.png",
     "static/media/account-statement.png": "/static/media/account-statement.3d12d2d59cb047bbe64d.png",
@@ -20,11 +22,11 @@
     "static/media/moneytransfer.png": "/static/media/moneytransfer.d0197cdddba33d917479.png",
     "static/media/register-removebg-preview.png": "/static/media/register-removebg-preview.e03f765f7d920780f6ce.png",
     "index.html": "/index.html",
-    "main.7f0f51f7.css.map": "/static/css/main.7f0f51f7.css.map",
-    "main.1727aabb.js.map": "/static/js/main.1727aabb.js.map"
+    "main.f93d9ef1.css.map": "/static/css/main.f93d9ef1.css.map",
+    "main.d6908f08.js.map": "/static/js/main.d6908f08.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f0f51f7.css",
-    "static/js/main.1727aabb.js"
+    "static/css/main.f93d9ef1.css",
+    "static/js/main.d6908f08.js"
   ]
 }
