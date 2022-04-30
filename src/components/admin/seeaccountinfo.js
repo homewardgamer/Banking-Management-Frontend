@@ -10,8 +10,6 @@ var [s_account, setAccountNumber] = useState("");
     const value = event.target.value;
     setAccountNumber(value);
   }
-
-  
   function seeAccountApi(event) {
     const url = "http://localhost:8000/api/account/view/{account_id}";
     const data = {s_account: s_account};
