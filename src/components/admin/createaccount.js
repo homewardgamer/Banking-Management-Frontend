@@ -52,13 +52,21 @@ return (
           />
         </div>
         <div className="mb-3">
-          {/* <label>Account Number</label> */}
-          <input
+          <label>Account Type</label>
+          {/* <input
             type="text"
             className="form-control"
             placeholder="Enter Account Type"
             onChange={handleAccountTypeChange}
-          />
+          /> */}
+          <select type="text"
+            className="form-control"
+            placeholder="Enter Account Type"
+            onChange={handleAccountTypeChange}>
+          <option value="SAVING">SAVING</option>
+          <option value="CURRENT">CURRENT</option>
+          </select>
+
         </div>
         
         <div className="mb-3">

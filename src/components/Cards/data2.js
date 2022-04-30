@@ -50,7 +50,7 @@ import deposit from "../../img/deposit.png"
 import withdraw from "../../img/withdraw.png"
 import addBranch from "../../img/addBranch.png"
 import CustD from "../../img/CustomerDetails.png"
-import editCustInfo from "../../img/editCustInfo.png"
+
 import addEmployee from "../../img/addEmployee.png"
 // import ChangePassword from "../../img/change-pwd.png"
 const data = {
