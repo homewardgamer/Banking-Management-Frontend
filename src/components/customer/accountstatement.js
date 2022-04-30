@@ -39,15 +39,12 @@ function AccountStatement() {
     } else {
       const url = "http://localhost:8000/api/transaction/filterbydate";
       const token = localStorage.getItem("token");
-      const data = {
-        start: start,
-        end: end,
-      };
+
       Axios.get(url, {
         headers: {
           Authorization: `Token ${token}`,
         },
-        data,
+        params: { start: start, end: end },
       })
         .then((res) => {
           console.log(res.data);
