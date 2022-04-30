@@ -22,7 +22,9 @@ function NewBranch() {
       });
   }
 
-  return (
+  if (localStorage.getItem("is_admin"))
+  {
+    return (
     <div>
       <NavbarAdmin />
       <div className="changepwd auth-wrapper">
@@ -52,6 +54,11 @@ function NewBranch() {
       </div>
     </div>
   );
+    } else{
+      return <div>
+        <h1 style={{margin: "2rem"}}>Not Authorized.</h1>
+      </div>
+    }
 }
 
 export default NewBranch;

@@ -3,6 +3,8 @@ import ImgBill from "../../img/verifi-removebg-preview.png"
 import "../../css/bill.css"
 
 function Verification () {
+  if (localStorage.getItem("is_customer"))
+  {
     return (
       <form style={{backgroundColor: " #85586F",marginTop: "5rem",paddingBottom: "3rem"}}>
         <section>
@@ -38,7 +40,11 @@ function Verification () {
 </div>
 </section>
       </form>
-    )
+    )}else{
+      return <div>
+        <h1 style={{margin: "2rem"}}>Not Authorized!!</h1>
+      </div>
+    }
   }
 
 export default Verification;

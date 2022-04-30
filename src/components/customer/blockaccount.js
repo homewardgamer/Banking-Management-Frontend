@@ -27,7 +27,9 @@ function BlockAccount(){
           alert(err);
         });
       }
-  
+
+      if (localStorage.getItem("is_customer"))
+      {
   
 return (
       <div>
@@ -63,7 +65,11 @@ return (
       </form>
       </div>
       </div>
-    )
+    )}else{
+      return <div>
+        <h1 style={{margin: "2rem"}}>Not Authorized.</h1>
+      </div>
+    }
 }
 
 export default BlockAccount;

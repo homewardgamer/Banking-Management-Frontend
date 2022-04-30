@@ -55,7 +55,8 @@ function Registeration() {
       is_customer: true,
     };
     const token = localStorage.getItem('token');
-    Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
+    // Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
+    Axios.post(url, data)
       .then((res) => {
         console.log(res.data);
       })

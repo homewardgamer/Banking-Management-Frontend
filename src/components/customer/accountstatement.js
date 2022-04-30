@@ -56,6 +56,8 @@ function AccountStatement() {
         });
     }
   }
+  if (localStorage.getItem("is_customer"))
+  {
   return (
     <div>
       <NavbarCustomer />
@@ -94,7 +96,11 @@ function AccountStatement() {
         </form>
       </div>
     </div>
-  );
+  );}else{
+    return <div>
+      <h1 style={{margin: "2rem"}}>Not Authorized.</h1>
+    </div>
+  }
 }
 
 export default AccountStatement;

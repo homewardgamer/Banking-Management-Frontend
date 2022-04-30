@@ -45,7 +45,8 @@ function EditAccount() {
       });
   }
  
-
+  if (localStorage.getItem("is_admin"))
+  {
   return (
     <div>
       <NavbarAdmin />
@@ -111,7 +112,11 @@ function EditAccount() {
         </form>
       </div>
     </div>
-  );
+  );}else{
+    return <div>
+      <h1 style={{margin: "2rem"}}>Not Authorized.</h1>
+    </div>
+  }
 }
 
 export default EditAccount;

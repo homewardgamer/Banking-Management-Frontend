@@ -16,6 +16,7 @@ function Login() {
     event.preventDefault();
     const url = "http://localhost:8000/api/user/login";
     const data = { username: username, password: password };
+
     Axios.post(url, data)
       .then((res) => {
         const token = res.data.token;
@@ -34,6 +35,8 @@ function Login() {
       },
     })
       .then((res) => {
+        localStorage.setItem('is_customer' , res.data.is_customer);
+        localStorage.setItem('is_admin' , res.data.is_admin);
         if (res.data.is_employee) {
           window.location.href = "/admin";
         } else {
