@@ -8,7 +8,7 @@ const CardsUI = props => {
         <navbar/>
    <div id="fed" className=" text">
    <div className="overflow" style={{borderTopLeftRadius:"1em", borderTopRightRadius:"1em"}}>
-       <img src={props.imgsrc} alt="cam" className="card-img-top card-imgcolor" width="240px" height="240px"/>
+       <img src={props.imgsrc} alt="cam" className="card-img-top card-imgcolor"/>
    </div>
    <div className="card-body-small text-dark">
        <h6 className="card-title-small " >{props.title}</h6>

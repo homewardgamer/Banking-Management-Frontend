@@ -167,3 +167,15 @@ p{
     background-color:rgba(56, 45, 79, 0.727);
     color:black;
   }
+
+  .card-img-top{
+    width: 300px;
+    height: 300px;
+}
+
+  /* @media screen and (max-width: 850px) {
+  .card-img-top{
+      width: 40px;
+      height: 30px;
+  }
+} */

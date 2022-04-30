@@ -1,55 +1,107 @@
-import React from "react";
+import React,{Component} from "react";
 import { Link } from "react-router-dom";
 
-function NavbarCustomer() {
+function NavBarCus() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-      <div className="container">
-        <Link className="navbar-brand" to={"/"}>
-          Bank
-        </Link>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul className="navbar-nav ml-auto">
-            
-            <li className="nav-item">
-              <Link className="nav-link" to={"/customer"}>
-                Dashboard
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={"/account-statement"}>
-                Account Statement
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={'/transfer'}>
-                Money Transfer
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={'/bill'}>
+    <div>
+      <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="/" style={{ color: "red" }}>
+            Bank
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/customer">
+                  Dashboard
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/account-statement">
+                 Account Statement
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/transfer">
+                  Money Transfer
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/bill">
                 Bill Payment
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={'/block-account'}>
-                Block Account
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={"/change-pwd"}>
-                Change Pwd
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to={"/home"}>
-                Logout
-              </Link>
-            </li>
-          </ul>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/block-account">
+                  Block Account
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/change-pwd">
+                  Change Pwd
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/home">
+                  Logout
+                </Link>
+              </li>
+            
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+      {/* <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">Navbar</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Link</a>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a className="dropdown-item" href="#">Action</a></li>
+            <li><a className="dropdown-item" href="#">Another action</a></li>
+            <li><hr className="dropdown-divider" /></li>
+            <li><a className="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form className="d-flex">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button className="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> */}
+    </div>
   );
 }
-export default NavbarCustomer;
+
+export default NavBarCus;
+
+
