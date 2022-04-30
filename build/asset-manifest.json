@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f5880e9.css",
-    "main.js": "/static/js/main.55916cb8.js",
+    "main.css": "/static/css/main.7f0f51f7.css",
+    "main.js": "/static/js/main.1727aabb.js",
     "static/media/payy-removebg-preview.png": "/static/media/payy-removebg-preview.1b3fe2d6d0dda22f509c.png",
     "static/media/ImgBill.png": "/static/media/ImgBill.959c263da5710519e4d7.png",
     "static/media/addBranch.png": "/static/media/addBranch.54882976d50542eddf7a.png",
@@ -20,11 +20,11 @@
     "static/media/moneytransfer.png": "/static/media/moneytransfer.d0197cdddba33d917479.png",
     "static/media/register-removebg-preview.png": "/static/media/register-removebg-preview.e03f765f7d920780f6ce.png",
     "index.html": "/index.html",
-    "main.4f5880e9.css.map": "/static/css/main.4f5880e9.css.map",
-    "main.55916cb8.js.map": "/static/js/main.55916cb8.js.map"
+    "main.7f0f51f7.css.map": "/static/css/main.7f0f51f7.css.map",
+    "main.1727aabb.js.map": "/static/js/main.1727aabb.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f5880e9.css",
-    "static/js/main.55916cb8.js"
+    "static/css/main.7f0f51f7.css",
+    "static/js/main.1727aabb.js"
   ]
 }

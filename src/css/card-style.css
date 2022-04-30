@@ -168,11 +168,7 @@ p{
     color:black;
   }
 
-  .card-img-top{
-    width: 300px;
-    height: 300px;
-}
-
+  
   /* @media screen and (max-width: 850px) {
   .card-img-top{
       width: 40px;

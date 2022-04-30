@@ -114,7 +114,7 @@ button.ghost {
     transition: transform 0.5s ease;
 }
 #im:hover{
-	transform: scale(1.2);
+	/* transform: scale(1.2); */
     color: rgba(12, 1, 32, 0.35);
 }
 .form-container {
@@ -287,7 +287,6 @@ footer a {
 		height: 320px;
 	}
 	#im:hover{
-		transform: scale(1.09);
 		color: rgba(12, 1, 32, 0.35);
 	}
   }
