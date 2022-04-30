@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { Link, Navigate } from "react-router-dom";
 import Axios from "axios";
 function Login() {
   var [username, setUsername] = useState("");
   var [password, setPassword] = useState("");
-  var [redirectUrl, setredirectUrl] = useState("");
 
   function handleUserChange(event) {
     const value = event.target.value;
@@ -15,6 +13,7 @@ function Login() {
     setPassword(value);
   }
   async function loginApi(event) {
+    event.preventDefault();
     const url = "http://localhost:8000/api/user/login";
     const data = { username: username, password: password };
     Axios.post(url, data)
@@ -36,9 +35,9 @@ function Login() {
     })
       .then((res) => {
         if (res.data.is_employee) {
-          setredirectUrl("/admin");
+          window.location.href = "/admin";
         } else {
-          setredirectUrl("/customer");
+          window.location.href = "/customer";
         }
       })
       .catch((err) => {
@@ -86,15 +85,9 @@ function Login() {
         </div>
 
         <div className="d-grid">
-          <Link to={redirectUrl}>
-            <button
-              type="submit"
-              className="btn btn-primary"
-              onClick={loginApi}
-            >
-              Submit
-            </button>
-          </Link>
+          <button type="submit" className="btn btn-primary" onClick={loginApi}>
+            Submit
+          </button>
         </div>
         {/* <p className="forgot-password text-right">
           Forgot <a href="/">password?</a>

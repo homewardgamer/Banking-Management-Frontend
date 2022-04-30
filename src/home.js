@@ -77,31 +77,35 @@ function Dashboard() {
         </div>
         <div className="container-md w-md-50 d-md-flex justify-content-center align-items-center flex-column">
           <div className="col-md-10 offset-md-1 col-xl-8 offset-xl-0 double-gutter-md-left-padding ">
-            <h2 id="business-tagline" className="text-center text-md-left">
+            <h2 id="business-tagline" className=" text-md-left">
               Next generation digital banking
             </h2>
-            <p className="text-center  text-md-left color-grayish-blue">
+            <p className="  text-md-left color-grayish-blue">
               Take your financial life online. Your Easybank account will be a
               one-stop-shop for spending, saving, budgeting, investing, and much
               more.
             </p>
+           
             <Link to="/sign-in">
-            <button
+            <button style={{display: "inline-block"}}
                 id="request-invite-btn"
                 type="button"
                 className="btn btn-lg rounded-pill text-white bg-green-cyan ml-auto mr-auto ml-md-0 mr-md-0 request-btns"
               >
                 Login
               </button>
-            </Link>
-           <br />
+             
+              </Link>
+             
+           
             <Link to="/register">
-              <button
+              <button style={{display: "inline-block",marginLeft: "1rem"}}
                 id="request-invite-btn"
                 type="button"
                 className="btn btn-lg rounded-pill text-white bg-green-cyan ml-auto mr-auto ml-md-0 mr-md-0 request-btns">Register
               </button>
             </Link>
+           
           </div>
         </div>
       </div>
