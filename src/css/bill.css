@@ -104,10 +104,10 @@ button.ghost {
 	min-height: 600px;
 } 
 .cc:hover{
-    transform: translateY(-20px);
+    /* transform: translateY(-20px); */
     transition:0.5s;
     z-index: 3;
-	box-shadow: 5px 10px 15px 1px #AC7D88 !important;
+	box-shadow: 5px 10px 15px 1px #f6a4b7 !important;
 }
 #im{
 	transform: scale(1);
