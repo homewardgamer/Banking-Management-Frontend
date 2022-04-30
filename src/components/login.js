@@ -14,14 +14,12 @@ function Login() {
     const value = event.target.value;
     setPassword(value);
   }
-  function loginApi(event) {
+  async function loginApi(event) {
     const url = "http://localhost:8000/api/user/login";
     const data = { username: username, password: password };
     Axios.post(url, data)
       .then((res) => {
-        // console.log(res.data);
         const token = res.data.token;
-        console.log(`Token ${token}`);
         localStorage.setItem("token", token);
         fetchUser(token);
       })
@@ -37,8 +35,6 @@ function Login() {
       },
     })
       .then((res) => {
-        console.log(res.data);
-        const data = res.data;
         if (res.data.is_employee) {
           setredirectUrl("/admin");
         } else {

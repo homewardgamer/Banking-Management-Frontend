@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import Axios from "axios";
 import ImgBill from "../../img/deposit2-removebg-preview.png";
 import "../../css/bill.css";
@@ -8,7 +8,6 @@ function DepositMoney() {
   var [r_account, setAccountNumber] = useState("");
   var [pin, setPin] = useState("");
   var [amount, setAmount] = useState("");
-
 
   function handleNumberChange(event) {
     const value = event.target.value;
@@ -22,15 +21,22 @@ function DepositMoney() {
     const value = event.target.value;
     setAmount(value);
   }
-  function depositApi(event) {
+  async function depositApi(event) {
     const url = "http://localhost:8000/api/transaction/new";
-    const data = {r_account: r_account,pin: pin,amount: amount};
-    const token = localStorage.getItem('token');
-    Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
+    const data = {
+      r_account: r_account,
+      pin: pin,
+      amount: amount,
+      type: "DEPOSIT",
+    };
+    const token = localStorage.getItem("token");
+    event.preventDefault();
+    Axios.post(url, data, { headers: { Authorization: `Token ${token}` } })
       .then((res) => {
         console.log(res.data);
       })
       .catch((err) => {
+        console.log(err);
         alert(err);
       });
   }
