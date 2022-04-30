@@ -76,7 +76,7 @@ function DepositMoney() {
                 <div className="form-group">
                   {/* <label for="email">Email</label> */}
                   <input
-                    type="text"
+                    type="string"
                     className="form-control"
                     name="pin"
                     placeholder="PIN"

@@ -11,10 +11,9 @@ var [s_account, setAccountNumber] = useState("");
     setAccountNumber(value);
   }
   function seeAccountApi(event) {
-    const url = "http://localhost:8000/api/account/view/{account_id}";
-    const data = {s_account: s_account};
+    const url = `http://localhost:8000/api/account/view/${s_account}`;
     const token = localStorage.getItem('token');
-    Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
+    Axios.get(url,{headers: {Authorization: `Token ${token}`}})
       .then((res) => {
         console.log(res.data);
       })

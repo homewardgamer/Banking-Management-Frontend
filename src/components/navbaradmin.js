@@ -27,6 +27,11 @@ function NavbarAdmin() {
             </Link>
           </li>
           <li className="nav-item">
+            <Link className="nav-link" to="/create-account">
+             New Account
+            </Link>
+          </li>
+          <li className="nav-item">
             <Link className="nav-link" to="/new-branch">
              New Branch
             </Link>

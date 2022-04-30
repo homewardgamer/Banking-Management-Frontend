@@ -26,7 +26,7 @@ function WithdrawMoney() {
     const url = "http://localhost:8000/api/transaction/new";
     const data = {s_account: s_account, pin: pin, amount: amount };
     const token = localStorage.getItem('token');
-    Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
+    Axios.post(url,data,{headers: {Authorization: `Token ${token}`}})
       .then((res) => {
         console.log(res.data);
       })
@@ -60,7 +60,7 @@ function WithdrawMoney() {
                 <div className="form-group">
                   {/* <label for="email">Email</label> */}
                   <input
-                    type="text"
+                    type="number"
                     className="form-control"
                     name="AccountNumber"
                     placeholder="Account Number"
@@ -70,7 +70,7 @@ function WithdrawMoney() {
                 <div className="form-group">
                   {/* <label for="email">Email</label> */}
                   <input
-                    type="text"
+                    type="string"
                     className="form-control"
                     name="pin"
                     placeholder="PIN"

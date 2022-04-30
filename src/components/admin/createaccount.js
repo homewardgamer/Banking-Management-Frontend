@@ -6,8 +6,7 @@ function CreateAccount(){
     var [id, setCusId] = useState("");
     var [pin, setPin] = useState("");
     var [account_type, setAccountType] = useState("");
-    var [branch, setBranch] = useState("");
-  
+
     function handleCusIdChange(event) {
       const value = event.target.value;
       setCusId(value);
@@ -16,20 +15,17 @@ function CreateAccount(){
       const value = event.target.value;
       setPin(value);
     }
-    function handleBranchChange(event) {
-        const value = event.target.value;
-        setBranch(value);
-      }
+
       function handleAccountTypeChange(event) {
         const value = event.target.value;
         setAccountType(value);
       }
     function CreateAccountApi(event) {
-      const url = "http://localhost:8000/api/account/disable/{account_id}";
+      const url = "http://localhost:8000/api/account/create";
       
-      const data = { id:id,account_type:account_type,branch: branch, pin: pin };
+      const data = { account_holder:id,account_type:account_type, pin: pin };
       const token = localStorage.getItem('token');
-      Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
+      Axios.post(url,data,{headers: {Authorization: `Token ${token}`}})
         .then((res) => {
           console.log(res.data);
         })
@@ -64,19 +60,11 @@ return (
             onChange={handleAccountTypeChange}
           />
         </div>
+        
         <div className="mb-3">
           {/* <label>Account Number</label> */}
           <input
             type="text"
-            className="form-control"
-            placeholder="Enter Bank Branch"
-            onChange={handleBranchChange}
-          />
-        </div>
-        <div className="mb-3">
-          {/* <label>Account Number</label> */}
-          <input
-            type="number"
             className="form-control"
             placeholder="Enter Verification Pin"
             onChange={handlePinChange}

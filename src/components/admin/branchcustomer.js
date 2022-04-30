@@ -10,10 +10,9 @@ function NewBranch() {
   }
 
   function BranchCusApi(event) {
-    const url = "http://localhost:8000/api/branch/all";
-    const data = { branch_id: branch_id };
+    const url = `http://localhost:8000/api/branch/${branch_id}/customers`;
     const token = localStorage.getItem("token");
-    Axios.post(url, { headers: { Authorization: `Token ${token}` } }, data)
+    Axios.get(url, { headers: { Authorization: `Token ${token}` } })
       .then((res) => {
         console.log(res.data);
       })
@@ -34,7 +33,7 @@ function NewBranch() {
           <div className="mb-3">
             {/* <label>Branch Id</label> */}
             <input
-              type="text"
+              type="number"
               className="form-control"
               placeholder="Enter Branch Id"
               onChange={handleBranchIdChange}
