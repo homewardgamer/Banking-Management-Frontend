@@ -66,6 +66,7 @@ function MoneyTransfer(){
           {/* <label for="password">Password</label> */}
           <input type="number" className="form-control" placeholder="Verification Pin" onChange={handlePinChange}/>
         </div>
+        <br />
         <button type="submit" className="btn bb" onClick={MoneyTransferApi}>TRANSFER</button>
       </form>
     </div>
