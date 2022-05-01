@@ -56,7 +56,7 @@ export default function CardSnippet(props) {
                   <CardMedia
                     className="empower-card-img"
                     component="img"
-                    sx={{ width: 130 }}
+                    sx={{ width: 130,height: 150 }}
                     image={item.imageUrl}
                     alt="Bank"
                   />

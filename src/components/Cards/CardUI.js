@@ -122,7 +122,7 @@ export default function CardSnippet(props) {
     <Card2
                 title="Customer Name"
               />
-      <Grid container spacing={10}  style={{marginTop: "1rem",padding: "0.5rem"}}>
+      <Grid item style={{display: 'flex',marginTop: "1rem",padding: "0.5rem"}} container spacing={10} >
         {dataSearch.map((item, index) => {
           return (
             <Grid item xs={12} sm={12} md={6} lg={4}>
@@ -131,14 +131,14 @@ export default function CardSnippet(props) {
                 style={{ backgroundColor: item.colorName }}
                 sx={{ pt: 2, px: 1 }}
               >
-                <div style={{ display: "flex", justifyContent: "center" }}>
-                  <CardMedia
+                <div style={{ display: "flex", justifyContent: "center", maxWidth:"125px", maxHeight:"180px" }}>
+                  {/* <CardMedia
                     className="empower-card-img"
                     component="img"
-                    sx={{ width: 125 }}
                     image={item.imageUrl}
                     alt="Bank"
-                  />
+                  /> */}
+                <img src={item.imageUrl} alt="image" height={"10px"} width={"10px"} />
                 </div>
                 <CardContent align="center">
                   <Typography

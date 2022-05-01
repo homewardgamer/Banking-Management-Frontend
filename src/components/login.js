@@ -35,8 +35,9 @@ function Login() {
       },
     })
       .then((res) => {
-        localStorage.setItem('is_customer' , res.data.is_customer);
-        localStorage.setItem('is_admin' , res.data.is_admin);
+        localStorage.setItem("is_customer" , res.data.is_customer);
+        localStorage.setItem("is_admin" , res.data.is_admin);
+        console.log(res.data.is_admin);
         if (res.data.is_employee) {
           window.location.href = "/admin";
         } else {

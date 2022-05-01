@@ -36,7 +36,7 @@ var [s_account, setAccountNumber] = useState("");
             type="number"
             className="form-control"
             placeholder="Account Number"
-            onchange={handleAccountNumChange}
+            onChange={handleAccountNumChange}
           />
         </div>
 

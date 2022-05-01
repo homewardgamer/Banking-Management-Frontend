@@ -5,7 +5,7 @@ const CardsUI = props => {
   return (
     
     <div>
-        <navbar/>
+        
    <div id="fed bgg" className="text">
    <div className="card-body-big text-dark">
        <h4 className="card-title-big p1">{props.title}</h4>

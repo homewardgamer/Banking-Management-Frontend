@@ -82,15 +82,11 @@ import Card from "@mui/material/Card";
 import Card2 from "./Card2UI";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import IconButton from "@mui/material/IconButton";
-
-import CardActions from "@mui/material/CardActions";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 import data from "./data";
 import { useState } from "react";
-import search from "../../img/accountstatement.png";
 import Axios from "axios";
 
 export default function CardSnippet(props) {
@@ -142,7 +138,7 @@ export default function CardSnippet(props) {
                   <CardMedia
                     className="empower-card-img"
                     component="img"
-                    sx={{ width: 130 }}
+                    sx={{ width: 130,height: 150 }}
                     image={item.imageUrl}
                     alt="Bank"
                   />

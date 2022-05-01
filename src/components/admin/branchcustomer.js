@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import Axios from "axios";
 import NavbarAdmin from "../navbaradmin";
 function NewBranch() {

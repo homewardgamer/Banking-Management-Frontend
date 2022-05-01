@@ -37,7 +37,7 @@ var [id, setCusId] = useState("");
             type="number"
             className="form-control"
             placeholder="Customer Id"
-            onchange={handleAccountNumChange}
+            onChange={handleAccountNumChange}
           />
         </div>
 

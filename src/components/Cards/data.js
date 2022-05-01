@@ -45,8 +45,6 @@
 //   };
 //   export default data;
 
-import React from "react";
-import Verification from "../../img/verification.png"
 import MoneyTransfer from "../../img/moneytransfer.png"
 import editCustInfo from "../../img/editCustInfo.png"
 import BillPayment from "../../img/billpayment.png"

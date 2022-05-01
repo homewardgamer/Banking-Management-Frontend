@@ -45,7 +45,7 @@
 //   };
 //   export default data;
 
-import React from "react";
+
 import deposit from "../../img/deposit.png"
 import withdraw from "../../img/withdraw.png"
 import addBranch from "../../img/addBranch.png"
