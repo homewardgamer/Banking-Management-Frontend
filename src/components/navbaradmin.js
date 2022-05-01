@@ -73,7 +73,7 @@ function NavbarAdmin() {
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to={"/home"} onClick={localStorage.clear()}>
+          <Link className="nav-link" to={"/home"}>
             Logout
           </Link>
         </li>

@@ -39,11 +39,10 @@ function Login() {
         localStorage.setItem('is_admin' , res.data.is_employee);
         
         if (res.data.is_employee) {
-        //  console.log("employee");
+        
            window.location.href = "/admin";
         } else {
-          // console.log("customer");
-          //console.log(localStorage.getItem("is_admin"));
+           
            window.location.href = "/customer";
         }
       })
