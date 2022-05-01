@@ -29,6 +29,8 @@ function AccountStatement() {
           console.log(res.data[0]);
           setData(res.data);
           generatePDF(data);
+          alert("Account Statement Generated.");
+        window.location.href = "/customer";
         })
         .then(() => {
           window.location.href = "/customer";

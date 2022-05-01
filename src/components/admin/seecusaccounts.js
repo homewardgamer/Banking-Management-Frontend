@@ -17,6 +17,8 @@ var [id, setCusId] = useState("");
     Axios.get(url,data,{headers: {Authorization: `Token ${token}`}})
       .then((res) => {
         console.log(res.data);
+        alert("Fetched Account Successfully!!");
+        window.location.href = "/admin";
       })
       .catch((err) => {
         alert(err);

@@ -31,7 +31,7 @@ function NewBranch() {
     Axios.post(url, data, { headers: { Authorization: `Token ${token}` } })
       .then((res) => {
         console.log(res.data);
-        alert("Branch Added Succesfully!");
+        alert("New Branch Added!");
         window.location.href = "/admin";
       })
       .catch((err) => {
