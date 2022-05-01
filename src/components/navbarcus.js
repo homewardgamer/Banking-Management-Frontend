@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function NavBarCus() {
+  function removeData() {
+    console.log("Removed data");
+    localStorage.clear();
+  }
   return (
     <div>
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -20,16 +24,20 @@ function NavBarCus() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent" >
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/customer">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/customer"
+                >
                   Dashboard
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/account-statement">
-                 Account Statement
+                  Account Statement
                 </Link>
               </li>
               <li className="nav-item">
@@ -39,14 +47,14 @@ function NavBarCus() {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/bill">
-                Bill Payment
+                  Bill Payment
                 </Link>
               </li>
               <li className="nav-item">
-              <Link className="nav-link" to={'/see-account-info'}>
-                See Account Info
-              </Link>
-            </li>
+                <Link className="nav-link" to={"/see-account-info"}>
+                  See Account Info
+                </Link>
+              </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/block-account">
                   Block Account
@@ -57,12 +65,11 @@ function NavBarCus() {
                   Change Pwd
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/home" onClick={localStorage.clear()}>
+              <li className="nav-item" onClick={removeData}>
+                <Link className="nav-link" to="/">
                   Logout
                 </Link>
               </li>
-            
             </ul>
           </div>
         </div>
@@ -108,5 +115,3 @@ function NavBarCus() {
 }
 
 export default NavBarCus;
-
-
