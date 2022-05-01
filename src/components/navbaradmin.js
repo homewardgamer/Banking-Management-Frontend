@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./../css/navbar.css";
 
 function NavbarAdmin() {
   function removeData() {
@@ -29,7 +30,7 @@ function NavbarAdmin() {
               <Link
                 className="nav-link active"
                 aria-current="page"
-                to="/customer"
+                to="/admin"
               >
                 Dashboard
               </Link>
