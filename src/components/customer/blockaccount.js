@@ -19,7 +19,7 @@ function BlockAccount(){
       
       const data = { account_id: account_id, pin: pin };
       const token = localStorage.getItem('token');
-      Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
+      Axios.post(url,data, {headers: {Authorization: `Token ${token}`}})
         .then((res) => {
           console.log(res.data);
           alert("Account Blocked Successfully!!");
