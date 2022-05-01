@@ -3,7 +3,8 @@ import ImgBill from "../../img/verifi-removebg-preview.png"
 import "../../css/bill.css"
 
 function Verification () {
-  if (localStorage.getItem("is_customer"))
+  const name = localStorage.getItem('is_customer');
+  if (name=="true")
   {
     return (
       <form style={{backgroundColor: " #85586F",marginTop: "5rem",paddingBottom: "3rem"}}>

@@ -40,7 +40,8 @@ function NewBranch() {
         alert(err);
       });
   }
-  if (localStorage.getItem("is_admin"))
+  const name = localStorage.getItem('is_admin');
+  if (name=="true")
   {
   return (
     <div>

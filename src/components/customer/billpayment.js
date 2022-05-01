@@ -38,7 +38,9 @@ function BillPayment(){
         alert(err);
       });
     }
-    if (localStorage.getItem("is_customer"))
+    const name = localStorage.getItem('is_customer');
+    console.log(name);
+    if (name=="true")
     {
     return (
       <div>

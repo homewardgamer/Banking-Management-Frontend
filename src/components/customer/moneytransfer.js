@@ -39,8 +39,10 @@ function MoneyTransfer(){
         alert(err);
       });
     }
-    if (localStorage.getItem("is_customer"))
+    const name = localStorage.getItem('is_customer');
+    if (name=="true")
     {
+      console.log("yes");
     return (
       <div>
       <NavbarCustomer/>
@@ -86,7 +88,9 @@ function MoneyTransfer(){
 </section>
       </form>
       </div>
-    )}else{
+    )}
+    else{
+      console.log("ho");
       return <div>
         <h1 style={{margin: "2rem"}}>Not Authorized.</h1>
       </div>

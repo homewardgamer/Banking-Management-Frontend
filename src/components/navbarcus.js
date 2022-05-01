@@ -58,7 +58,7 @@ function NavBarCus() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/home">
+                <Link className="nav-link" to="/home" onClick={localStorage.clear()}>
                   Logout
                 </Link>
               </li>

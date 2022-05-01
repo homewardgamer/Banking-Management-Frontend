@@ -35,13 +35,16 @@ function Login() {
       },
     })
       .then((res) => {
-        localStorage.setItem("is_customer" , res.data.is_customer);
-        localStorage.setItem("is_admin" , res.data.is_admin);
-        console.log(res.data.is_admin);
+        localStorage.setItem('is_customer' , res.data.is_customer);
+        localStorage.setItem('is_admin' , res.data.is_employee);
+        
         if (res.data.is_employee) {
-          window.location.href = "/admin";
+        //  console.log("employee");
+           window.location.href = "/admin";
         } else {
-          window.location.href = "/customer";
+          // console.log("customer");
+          //console.log(localStorage.getItem("is_admin"));
+           window.location.href = "/customer";
         }
       })
       .catch((err) => {

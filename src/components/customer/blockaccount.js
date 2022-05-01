@@ -28,7 +28,8 @@ function BlockAccount(){
         });
       }
 
-      if (localStorage.getItem("is_customer"))
+      const name = localStorage.getItem('is_customer');
+      if (name=="true")
       {
   
 return (
