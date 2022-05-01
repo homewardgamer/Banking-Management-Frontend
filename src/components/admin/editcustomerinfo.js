@@ -36,6 +36,7 @@ function EditAccount() {
     const url = "http://localhost:8000/api/user/update/<user_id>";
     const data = {first_name: first_name,last_name: last_name,address: address,dob: dob, email:email};
     const token = localStorage.getItem('token');
+    event.preventDefault();
     Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
       .then((res) => {
         console.log(res.data);

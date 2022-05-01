@@ -14,6 +14,7 @@ var [id, setCusId] = useState("");
     const url = `http://localhost:8000/api/account/list`;
     const token = localStorage.getItem('token');
     const data= {id:id};
+    event.preventDefault();
     Axios.get(url,data,{headers: {Authorization: `Token ${token}`}})
       .then((res) => {
         console.log(res.data);

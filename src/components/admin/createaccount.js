@@ -5,7 +5,7 @@ import Axios from "axios";
 function CreateAccount(){
     var [id, setCusId] = useState("");
     var [pin, setPin] = useState("");
-    var [account_type, setAccountType] = useState("");
+    var [account_type, setAccountType] = useState("SAVING");
 
     function handleCusIdChange(event) {
       const value = event.target.value;
@@ -24,6 +24,7 @@ function CreateAccount(){
       const url = "http://localhost:8000/api/account/create";
       
       const data = { account_holder:id,account_type:account_type, pin: pin };
+      event.preventDefault();
       const token = localStorage.getItem('token');
       Axios.post(url,data,{headers: {Authorization: `Token ${token}`}})
         .then((res) => {

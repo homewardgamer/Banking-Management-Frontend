@@ -28,7 +28,7 @@ function NavbarAdmin() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link
-                className="nav-link active"
+                className="nav-link "
                 aria-current="page"
                 to="/admin"
               >
@@ -86,23 +86,6 @@ function NavbarAdmin() {
             Logout
           </Link>
         </li>
-        
-        <li>
-              <Link className="nav-link" to="/seecus-accounts">
-                See Customer Accounts
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link className="nav-link" to={"/change-pwd"}>
-                Change Pwd
-              </Link>
-            </li>
-            <li className="nav-item" onClick={removeData}>
-              <Link className="nav-link" to={"/"}>
-                Logout
-              </Link>
-            </li>
           </ul>
         </div>
       </div>

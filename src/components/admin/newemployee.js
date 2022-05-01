@@ -46,6 +46,7 @@ function NewEmployee(){
   function RegisterEmployeeApi(event) {
     const url = "http://localhost:8000/api/user/register";
     const data = { username: username,first_name:first_name,last_name:last_name,dob:dob,email:email,address:address, password: password,is_employee:true };
+    event.preventDefault();
     Axios.post(url, data)
       .then((res) => {
         console.log(res.data);
@@ -96,6 +97,7 @@ function NewEmployee(){
         <div className="form-group">
           {/* <label for="password">Password</label> */}
           <input type="password" className="form-control" placeholder="Verification password" onChange={handlePasswordChange}/>
+          <p>Min 8 character alphanumeric Password and should include a special character</p>
         </div>
         <Link to="/">
         <button type="submit" className="btn bb" onClick={RegisterEmployeeApi}>REGISTER</button>

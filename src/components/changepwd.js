@@ -70,7 +70,6 @@ function ChangePassword() {
               onChange={handleConfirmPassChange}
             />
           </div>
-npm start
           <div className="d-grid">
             <button type="submit" className="btn btn-primary">
               Update Password

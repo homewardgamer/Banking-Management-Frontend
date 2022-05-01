@@ -28,6 +28,7 @@ function NewBranch() {
       branch_address: branch_address,
     };
     const token = localStorage.getItem("token");
+    event.preventDefault();
     Axios.post(url, data, { headers: { Authorization: `Token ${token}` } })
       .then((res) => {
         console.log(res.data);
