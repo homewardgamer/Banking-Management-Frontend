@@ -65,9 +65,7 @@ function NavBarCus() {
                   Change Pwd
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/home" />
-                </li>
+              
               <li className="nav-item" onClick={removeData}>
                 <Link className="nav-link" to="/">
                   Logout

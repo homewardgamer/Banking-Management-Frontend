@@ -12,6 +12,7 @@ function Registeration() {
   var [address, setAddress] = useState("");
   var [email, setEmail] = useState("");
   var [password, setPassword] = useState("");
+  var [branch_code, setBranch] = useState("");
 
   function handleUsernameChange(event) {
     const value = event.target.value;
@@ -41,6 +42,10 @@ function Registeration() {
     const value = event.target.value;
     setPassword(value);
   }
+  function handleBranchChange(event) {
+    const value = event.target.value;
+    setBranch(value);
+  }
 
   function RegisterCustomerApi(event) {
     const url = "http://localhost:8000/api/user/register";
@@ -53,12 +58,15 @@ function Registeration() {
       address: address,
       password: password,
       is_customer: true,
+      branch_code:branch_code,
     };
     const token = localStorage.getItem('token');
     // Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
     Axios.post(url, data)
       .then((res) => {
         console.log(res.data);
+        alert("Registered Successfully.");
+        window.location.href = "/";
       })
       .catch((err) => {
         alert(err);
@@ -128,6 +136,15 @@ function Registeration() {
                 <div className="form-group">
                   {/* <label for="password">Password</label> */}
                   <input
+                    type="number"
+                    className="form-control"
+                    placeholder="Bank Branch Code"
+                    onChange={handleBranchChange}
+                  />
+                </div>
+                <div className="form-group">
+                  {/* <label for="password">Password</label> */}
+                  <input
                     type="text"
                     className="form-control"
                     placeholder="Address"
@@ -143,6 +160,7 @@ function Registeration() {
                     onChange={handlePasswordChange}
                   />
                 </div>
+                <p>Min 8 character Alphanumeric Password and should include a Special character</p>
                 <Link to="/">
                   <button
                     type="submit"

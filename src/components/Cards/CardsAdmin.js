@@ -13,6 +13,7 @@ import Axios from "axios";
 export default function CardSnippet(props) {
   const [filter, setFilter] = useState("");
   const [name, setName] = useState("");
+  
   let dataSearch = data.cardData.filter((item) => {
     return Object.keys(item).some((key) =>
       item[key]

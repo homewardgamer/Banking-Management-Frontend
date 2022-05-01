@@ -30,7 +30,8 @@ function BillPayment(){
   function BillPaymentApi(event) {
     const url = "http://localhost:8000/api/transaction/new";
     const data = { s_account: s_account,r_account:r_account,amount:amount, pin: pin };
-    Axios.post(url, data)
+    const token = localStorage.getItem('token');
+    Axios.post(url, data,{headers: {Authorization: `Token ${token}`}})
       .then((res) => {
         console.log(res.data);
         alert("Bill Payed!!");

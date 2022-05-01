@@ -9,12 +9,12 @@ const CardsUI = props => {
    <div id="fed bgg" className="text">
    <div className="card-body-big text-dark">
        <h4 className="card-title-big p1">{props.title}</h4>
-       <p className="card-text p2" style={{color: 'white'}}>Account Type
+       {/* <p className="card-text p2" style={{color: 'white'}}>Account Type
            {/* {props.content} */}
-       </p>
+       {/*</p>
        <p className="card-text p3" style={{color: 'white'}}>
            Balance: $5604
-       </p>
+       </p> */}
    </div>
 
    </div>

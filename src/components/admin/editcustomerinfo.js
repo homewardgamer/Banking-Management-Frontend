@@ -59,7 +59,7 @@ function EditAccount() {
           <h3>Edit Account Information</h3>
 
           <div className="mb-3">
-            <label>First name</label>
+            {/* <label>First name</label> */}
             <input
               type="text"
               className="form-control"
@@ -69,7 +69,7 @@ function EditAccount() {
           </div>
 
           <div className="mb-3">
-            <label>Last name</label>
+            {/* <label>Last name</label> */}
             <input
               type="text"
               className="form-control"
@@ -89,7 +89,7 @@ function EditAccount() {
           </div>
 
           <div className="mb-3">
-            <label>Email address</label>
+            {/* <label>Email address</label> */}
             <input
               type="email"
               className="form-control"
@@ -99,7 +99,7 @@ function EditAccount() {
           </div>
 
           <div className="mb-3">
-            <label>Address</label>
+            {/* <label>Address</label> */}
             <input
               type="text"
               className="form-control"

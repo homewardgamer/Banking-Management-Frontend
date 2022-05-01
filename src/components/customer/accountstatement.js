@@ -68,7 +68,7 @@ function AccountStatement() {
         <form className="auth-inner">
           <h3>Generate Account Statement</h3>
           <div className="mb-3">
-            {/* <label>Start Date</label> */}
+            <label>Start Date</label>
             <input
               type="date"
               className="form-control"
@@ -78,7 +78,7 @@ function AccountStatement() {
           </div>
 
           <div className="mb-3">
-            {/* <label>End Date</label> */}
+            <label>End Date</label>
             <input
               type="date"
               className="form-control"

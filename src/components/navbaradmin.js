@@ -51,16 +51,6 @@ function NavbarAdmin() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/branch-customer">
-                Branch Customers
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/edit-account-info">
-                Edit Account Info
-              </Link>
-            </li>
-            <li className="nav-item">
               <Link className="nav-link" to="/deposit">
                 Deposit
               </Link>
@@ -70,6 +60,17 @@ function NavbarAdmin() {
                 Withdraw
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/branch-customer">
+                Branch Customers
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/edit-account-info">
+                Edit Customer Info
+              </Link>
+            </li>
+            
             <li className="nav-item">
             <Link className="nav-link" to="/seecus-accounts">
               See Customer Accounts

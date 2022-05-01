@@ -30,8 +30,9 @@ function MoneyTransfer(){
 
   function MoneyTransferApi(event) {
     const url = "http://localhost:8000/api/transaction/new";
-    const data = { s_account: s_account,r_account:r_account,amount:amount, pin: pin };
-    Axios.post(url, data)
+    const data = { s_account: s_account,r_account:r_account,amount:amount, pin: pin,type:"TRANSFER" };
+    const token = localStorage.getItem('token');
+    Axios.post(url, data,{headers: {Authorization: `Token ${token}`}})
       .then((res) => {
         console.log(res.data);
         alert("Money Transfered.");
