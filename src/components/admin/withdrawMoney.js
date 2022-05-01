@@ -29,6 +29,8 @@ function WithdrawMoney() {
     Axios.post(url,data,{headers: {Authorization: `Token ${token}`}})
       .then((res) => {
         console.log(res.data);
+        alert("Money Withdrawn Successfully.");
+        window.location.href = "/admin";
       })
       .catch((err) => {
         alert(err);

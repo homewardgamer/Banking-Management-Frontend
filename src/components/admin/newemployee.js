@@ -49,6 +49,8 @@ function NewEmployee(){
     Axios.post(url, data)
       .then((res) => {
         console.log(res.data);
+        alert("Registered Successfully.");
+        window.location.href = "/admin";
       })
       .catch((err) => {
         alert(err);

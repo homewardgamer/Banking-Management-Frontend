@@ -22,6 +22,8 @@ function BlockAccount(){
       Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
         .then((res) => {
           console.log(res.data);
+          alert("Account Blocked Successfully!!");
+          window.location.href = "/customer";
         })
         .catch((err) => {
           alert(err);

@@ -39,6 +39,8 @@ function EditAccount() {
     Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
       .then((res) => {
         console.log(res.data);
+        alert("Successfully Edited.");
+        window.location.href = "/admin";
       })
       .catch((err) => {
         alert(err);

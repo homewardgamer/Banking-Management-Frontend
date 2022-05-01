@@ -34,6 +34,8 @@ function DepositMoney() {
     Axios.post(url, data, { headers: { Authorization: `Token ${token}` } })
       .then((res) => {
         console.log(res.data);
+        alert("Money Deposited Successfully.");
+        window.location.href = "/admin";
       })
       .catch((err) => {
         console.log(err);
@@ -41,7 +43,7 @@ function DepositMoney() {
       });
   }
   const name = localStorage.getItem('is_admin');
-  if (name=="true")
+  if (name==="true")
   {
   return (
     <div>

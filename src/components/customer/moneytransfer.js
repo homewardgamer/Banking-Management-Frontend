@@ -34,6 +34,8 @@ function MoneyTransfer(){
     Axios.post(url, data)
       .then((res) => {
         console.log(res.data);
+        alert("Money Transfered.");
+        window.location.href = "/customer";
       })
       .catch((err) => {
         alert(err);

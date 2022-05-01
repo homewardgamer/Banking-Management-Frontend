@@ -12,6 +12,8 @@ function SeeAccount() {
     Axios.get(url, { headers: { Authorization: `Token ${token}` } })
       .then((res) => {
         setData(res.data);
+        alert("Account Info Fetched!!");
+        window.location.href = "/customer";
       })
       .catch((err) => {
         alert(err);

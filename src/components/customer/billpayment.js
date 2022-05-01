@@ -33,6 +33,8 @@ function BillPayment(){
     Axios.post(url, data)
       .then((res) => {
         console.log(res.data);
+        alert("Bill Payed!!");
+        window.location.href = "/customer";
       })
       .catch((err) => {
         alert(err);
