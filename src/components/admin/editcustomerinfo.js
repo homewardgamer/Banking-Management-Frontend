@@ -3,13 +3,23 @@ import Axios from "axios";
 import NavbarAdmin from "../navbaradmin";
 
 function EditAccount() {
+  var [id, setCusId] = useState("");
+  var [username, setUsername] = useState("");
   var [first_name, setFirstName] = useState("");
   var [last_name, setLastName] = useState("");
-  var [email, setEmail] = useState("");
-  var [address, setAddress] = useState("");
   var [dob, setDOB] = useState("");
-  
+  var [address, setAddress] = useState("");
+  var [email, setEmail] = useState("");
+  var [branch_code, setBranch] = useState("");
 
+  function handleCusIdChange(event) {
+    const value = event.target.value;
+    setCusId(value);
+  }
+  function handleUsernameChange(event) {
+    const value = event.target.value;
+    setUsername(value);
+  }
   function handleFirstChange(event) {
     const value = event.target.value;
     setFirstName(value);
@@ -18,26 +28,30 @@ function EditAccount() {
     const value = event.target.value;
     setLastName(value);
   }
-  function handleEmailChange(event) {
-    const value = event.target.value;
-    setEmail(value);
-  }
-
-  function handleAddressChange(event) {
-    const value = event.target.value;
-    setAddress(value);
-  }
   function handleDOBChange(event) {
     const value = event.target.value;
     setDOB(value);
   }
+  function handleEmailChange(event) {
+    const value = event.target.value;
+    setEmail(value);
+  }
+  function handleAddressChange(event) {
+    const value = event.target.value;
+    setAddress(value);
+  }
+
+  function handleBranchChange(event) {
+    const value = event.target.value;
+    setBranch(value);
+  }
 
   function EditCustomerApi(event) {
-    const url = "http://localhost:8000/api/user/update/<user_id>";
-    const data = {first_name: first_name,last_name: last_name,address: address,dob: dob, email:email};
+    const url = `http://localhost:8000/api/user/update/${id}`;
+    const data = {id:id,username:username,first_name: first_name,last_name: last_name,address: address,dob: dob, email:email,branch_code:branch_code};
     const token = localStorage.getItem('token');
     event.preventDefault();
-    Axios.post(url,{headers: {Authorization: `Token ${token}`}}, data)
+    Axios.put(url,data,{headers: {Authorization: `Token ${token}`}})
       .then((res) => {
         console.log(res.data);
         alert("Successfully Edited.");
@@ -58,6 +72,24 @@ function EditAccount() {
         <form className="auth-inner">
           <h3>Edit Account Information</h3>
 
+          <div className="mb-3">
+            {/* <label>First name</label> */}
+            <input
+              type="number"
+              className="form-control"
+              placeholder="Customer Id"
+              onChange={handleCusIdChange}
+            />
+          </div>
+          <div className="mb-3">
+            {/* <label>First name</label> */}
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Username"
+              onChange={handleUsernameChange}
+            />
+          </div>
           <div className="mb-3">
             {/* <label>First name</label> */}
             <input
@@ -107,6 +139,16 @@ function EditAccount() {
               onChange={handleAddressChange}
             />
           </div>
+          <div className="mb-3">
+            {/* <label>Address</label> */}
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Enter Branch Code"
+              onChange={handleBranchChange}
+            />
+          </div>
+          
 
           <div className="d-grid">
             <button type="submit" className="btn btn-primary" onClick={EditCustomerApi}>
