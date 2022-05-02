@@ -15,8 +15,8 @@ function BlockAccount(){
       setPin(value);
     }
     function DisableAccountApi(event) {
-      const url = "http://localhost:8000/api/account/disable/{account_id}";
-      
+      const url = `http://localhost:8000/api/account/disable/${account_id}`;
+      event.preventDefault();
       const data = { account_id: account_id, pin: pin };
       const token = localStorage.getItem('token');
       Axios.post(url,data, {headers: {Authorization: `Token ${token}`}})

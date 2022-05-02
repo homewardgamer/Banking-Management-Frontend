@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import Axios from "axios";
 
 function ChangePassword() {
@@ -21,20 +21,23 @@ function ChangePassword() {
 
   function changePwdApi(event) {
     const url = "http://localhost:8000/api/user/changepassword";
-    const data = {old_password: old_password,new_password: new_password,new_password_confirm: new_password_confirm};
-    const token = localStorage.getItem('token');
-    Axios.put(url,data,{headers: {Authorization: `Token ${token}`}})
+    const data = {
+      old_password: old_password,
+      new_password: new_password,
+      new_password_confirm: new_password_confirm,
+    };
+    const token = localStorage.getItem("token");
+    event.preventDefault();
+    Axios.put(url, data, { headers: { Authorization: `Token ${token}` } })
       .then((res) => {
         console.log(res.data);
         alert("Password Changed Successfully.");
-    const name = localStorage.getItem('is_customer');
-    if (name=="true")
-    {
-      window.location.href = "/customer";
-    }
-    else{
-      window.location.href = "/admin";
-    }
+        const name = localStorage.getItem("is_customer");
+        if (name === "true") {
+          window.location.href = "/customer";
+        } else {
+          window.location.href = "/admin";
+        }
       })
       .catch((err) => {
         alert(err);
@@ -76,7 +79,11 @@ function ChangePassword() {
             />
           </div>
           <div className="d-grid">
-            <button type="submit" className="btn btn-primary" onClick={changePwdApi}>
+            <button
+              type="submit"
+              className="btn btn-primary"
+              onClick={changePwdApi}
+            >
               Update Password
             </button>
           </div>
