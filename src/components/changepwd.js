@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Axios from "axios";
-
+import { render } from "@testing-library/react";
+import NavbarAdmin from "./navbaradmin";
+import NavBarCus from "./navbarcus";
 function ChangePassword() {
   var [old_password, setOldPassword] = useState("");
   var [new_password, setNewPassword] = useState("");
@@ -43,9 +45,20 @@ function ChangePassword() {
         alert(err);
       });
   }
+  
+  const renderNavBar=()=>{
+    const check = localStorage.getItem("is_customer");
+    if (check === "true") {
+      return <NavBarCus/>
+    }
+    else {
+      return <NavbarAdmin/>
+    }  
+  }
 
   return (
     <div>
+    {renderNavBar()}
       <div className="changepwd auth-wrapper">
         <form className="auth-inner">
           <h3>Change Password</h3>
