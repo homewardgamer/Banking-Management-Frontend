@@ -6,7 +6,6 @@ import generatePDF from "../../services/statementGenerator";
 function AccountStatement() {
   const [start, setStart] = useState("");
   const [end, setEnd] = useState("");
-  const [data, setData] = useState([]);
   function setStartDataValue(event) {
     const value = event.target.value;
     setStart(value);
@@ -26,13 +25,11 @@ function AccountStatement() {
         },
       })
         .then((res) => {
-          console.log(res.data[0]);
-          setData(res.data);
-          generatePDF(data);
-          alert("Account Statement Generated.");
-        window.location.href = "/customer";
+          console.log(res.data);
+          generatePDF(res.data);
         })
         .then(() => {
+          alert("Account Statement Generated.");
           window.location.href = "/customer";
         })
         .catch((err) => {
@@ -49,60 +46,60 @@ function AccountStatement() {
         params: { start: start, end: end },
       })
         .then((res) => {
-          console.log(res.data);
-          setData(res.data);
-          generatePDF(data);
+          generatePDF(res.data);
         })
         .catch((err) => {
           alert(err);
         });
     }
   }
-  const name = localStorage.getItem('is_customer');
-  if (name=="true")
-  {
-  return (
-    <div>
-      <NavbarCustomer />
-      <div className="auth-wrapper">
-        <form className="auth-inner">
-          <h3>Generate Account Statement</h3>
-          <div className="mb-3">
-            <label>Start Date</label>
-            <input
-              type="date"
-              className="form-control"
-              placeholder="Start Date"
-              onChange={setStartDataValue}
-            />
-          </div>
+  const name = localStorage.getItem("is_customer");
+  if (name === "true") {
+    return (
+      <div>
+        <NavbarCustomer />
+        <div className="auth-wrapper">
+          <form className="auth-inner">
+            <h3>Generate Account Statement</h3>
+            <div className="mb-3">
+              <label>Start Date</label>
+              <input
+                type="date"
+                className="form-control"
+                placeholder="Start Date"
+                onChange={setStartDataValue}
+              />
+            </div>
 
-          <div className="mb-3">
-            <label>End Date</label>
-            <input
-              type="date"
-              className="form-control"
-              placeholder="End Date"
-              onChange={setEndDateValue}
-            />
-          </div>
+            <div className="mb-3">
+              <label>End Date</label>
+              <input
+                type="date"
+                className="form-control"
+                placeholder="End Date"
+                onChange={setEndDateValue}
+              />
+            </div>
 
-          <div className="d-grid">
-            <button
-              type="submit"
-              className="btn btn-primary"
-              onClick={generateStatement}
-            >
-              Generate Statement
-            </button>
-          </div>
-        </form>
+            <div className="d-grid">
+              <button
+                type="submit"
+                className="btn btn-primary"
+                onClick={generateStatement}
+              >
+                Generate Statement
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-  );}else{
-    return <div>
-      <h1 style={{margin: "2rem"}}>Not Authorized.</h1>
-    </div>
+    );
+  } else {
+    return (
+      <div>
+        <h1 style={{ margin: "2rem" }}>Not Authorized.</h1>
+      </div>
+    );
   }
 }
 

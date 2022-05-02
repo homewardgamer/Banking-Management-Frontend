@@ -17,7 +17,7 @@ const generatePDF = (statements) => {
   ];
 
   const tableRows = [];
-
+  console.log(statements);
   statements.forEach((object) => {
     if (object.s_account == null) {
       object.s_account = "Deposited by admin";
