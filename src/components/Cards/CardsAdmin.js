@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-
+import Link from "@mui/material/Link";
 import data from "./data2";
 import { useState } from "react";
 import Axios from "axios";
@@ -48,6 +48,7 @@ export default function CardSnippet(props) {
         {dataSearch.map((item, index) => {
           return (
             <Grid item xs={12} sm={12} md={6} lg={4}>
+            <Link href={item.urlsrc}>
               <Card
                 className="empower-card"
                 style={{ backgroundColor: item.colorName }}
@@ -74,6 +75,7 @@ export default function CardSnippet(props) {
                   </Typography>
                 </CardContent>
               </Card>
+              </Link>
             </Grid>
           );
         })}

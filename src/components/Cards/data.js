@@ -58,18 +58,21 @@ const data = {
       colorName: "#FFCECA",
       imageUrl: AccountStatement,
       note: "Acount Statement",
+      urlsrc: "/account-statement",
     },
     {
         id: 2,
         colorName: "#B3C1F0",
         imageUrl: MoneyTransfer,
         note: "Money Transfer",
+        urlsrc: "/transfer",
       },
       {
         id: 3,
         colorName: "#FFCECA",
         imageUrl: editCustInfo,
         note: "See Account Info",
+        urlsrc: "/see-account-info",
       },
       {
 
@@ -78,18 +81,21 @@ const data = {
         colorName: "#BCE6ED",
         imageUrl: BillPayment,
         note: "Bill Payment",
+        urlsrc: "/bill",
       },
       {
         id: 5,
         colorName: "#B3C1F0",
         imageUrl: BlockAccount,
         note: "Block Account",
+        urlsrc: '/block-account',
       },
       {
         id: 6,
         colorName: "#BCE6ED",
         imageUrl: ChangePassword,
         note: "Change Password",
+        urlsrc: '/change-pwd',
       },
   ],
 };

@@ -60,12 +60,14 @@ const data = {
       colorName: "#FFCECA",
       imageUrl: deposit,
       note: "Deposit Money",
+      urlsrc: "/deposit",
     },
     {
         id: 2,
         colorName: "#B3C1F0",
         imageUrl: withdraw,
         note: "Withdraw Money",
+        urlsrc: "/withdraw",
       },
       
       {
@@ -73,18 +75,21 @@ const data = {
         colorName: "#B3C1F0",
         imageUrl: addEmployee,
         note: "Add Employee",
+        urlsrc: "/new-employee",
       },
       {
         id: 4,
         colorName: "#BCE6ED",
         imageUrl: addBranch,
         note: "Add New Branch",
+        urlsrc: "/new-branch",
       },
       {
         id: 5,
         colorName: "#FFCECA",
         imageUrl: CustD,
         note: "Branch Customers",
+        urlsrc: "/branch-customer",
       },
   ],
 };
