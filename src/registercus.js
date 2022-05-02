@@ -79,13 +79,13 @@ function Registeration() {
         style={{
           backgroundColor: " #85586F",
           marginTop: "5rem",
-          padding: "3rem",
+          padding: "2rem",
         }}
       >
         <section>
           <div className="container cc" id="container">
             <div className="form-container sign-in-container">
-              <form action="/login" method="POST">
+              <form action="/login" method="POST" style={{paddingTop: "2rem"}}>
                 <h1>Register</h1>
                 
                 <div className="form-group">
@@ -160,9 +160,9 @@ function Registeration() {
                     onChange={handlePasswordChange}
                   />
                 </div>
-                <p>Min 8 character Alphanumeric Password and should include a Special character</p>
+                <p style={{fontSize: "10px", fontWeight: "bold",marginTop: "-0.5rem"}}>Min 8 character Alphanumeric Password and should include a Special character</p>
                 <Link to="/">
-                  <button
+                  <button style={{marginTop: "-4rem"}}
                     type="submit"
                     className="btn bb"
                     onClick={RegisterCustomerApi}
