@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
-import NavbarAdmin from "../navbaradmin";
+import NavbarCus from "../navbarcus";
 import { format } from "date-fns";
 
 // account_detail_by_id
@@ -22,7 +22,7 @@ function SeeAccount() {
   if (name === "true") {
     return (
       <div>
-        <NavbarAdmin />
+        <NavbarCus />
         <div className="auth-wrapper">
           <h1 style={{ margin: "2%" }}>Account(s) Information</h1>
           <div class="wrapper">
