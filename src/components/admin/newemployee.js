@@ -68,7 +68,7 @@ function NewEmployee(){
   <div className="container cc" id="container">
     <div className="form-container sign-in-container">
     <form action="/login" method="POST">
-        <h1>Register</h1>
+        <h1>New Employee</h1>
         <br></br>
         <div className="form-group">
           {/* <label for="email">Email</label> */}
@@ -100,7 +100,7 @@ function NewEmployee(){
           <p>Min 8 character alphanumeric Password and should include a special character</p>
         </div>
         <Link to="/">
-        <button type="submit" className="btn bb" onClick={RegisterEmployeeApi}>REGISTER</button>
+        <button type="submit" className="btn bb" onClick={RegisterEmployeeApi}>Add New Employee</button>
         </Link>
       </form>
     </div>

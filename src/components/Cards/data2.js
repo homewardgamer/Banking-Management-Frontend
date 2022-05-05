@@ -50,14 +50,14 @@ import deposit from "../../img/deposit.png"
 import withdraw from "../../img/withdraw.png"
 import addBranch from "../../img/addBranch.png"
 import CustD from "../../img/CustomerDetails.png"
-
+import ChangePassword from "../../img/change-pwd.png"
 import addEmployee from "../../img/addEmployee.png"
 // import ChangePassword from "../../img/change-pwd.png"
 const data = {
   cardData: [
     {
       id: 1,
-      colorName: "#FFCECA",
+      colorName: "#BCE6ED",
       imageUrl: deposit,
       note: "Deposit Money",
       urlsrc: "/deposit",
@@ -72,14 +72,14 @@ const data = {
       
       {
         id: 3,
-        colorName: "#B3C1F0",
+        colorName: "#FFCECA",
         imageUrl: addEmployee,
         note: "Add Employee",
         urlsrc: "/new-employee",
       },
       {
         id: 4,
-        colorName: "#BCE6ED",
+        colorName: "#B3C1F0",
         imageUrl: addBranch,
         note: "Add New Branch",
         urlsrc: "/new-branch",
@@ -90,6 +90,13 @@ const data = {
         imageUrl: CustD,
         note: "Branch Customers",
         urlsrc: "/branch-customer",
+      },
+      {
+        id: 6,
+        colorName: "#BCE6ED",
+        imageUrl: ChangePassword,
+        note: "Change Password",
+        urlsrc: '/change-pwd',
       },
   ],
 };
