@@ -131,7 +131,7 @@ export default function CardSnippet(props) {
                 style={{ backgroundColor: item.colorName }}
                 sx={{ pt: 2, px: 1 }}
               >
-                <div style={{ display: "flex", justifyContent: "center", maxWidth:"125px", maxHeight:"180px" }}>
+                <div style={{ display: "flex", justifyContent: "center", maxWidth:"100px", maxHeight:"100px" }}>
                   {/* <CardMedia
                     className="empower-card-img"
                     component="img"

@@ -130,14 +130,15 @@ export default function CardSnippet(props) {
             <Link href={item.urlsrc}>
               <Card
                 className="empower-card"
-                style={{ backgroundColor: item.colorName }}
-                sx={{ pt: 2, px: 1 }}
+                style={{ backgroundColor: item.colorName ,marginLeft: 20,borderRadius: 25,padding: 5,}}
+                sx={{ width: 290,height: 180 }}
+                //sx={{ pt: 2, px: 1 }}
               >
                 <div style={{ display: "flex", justifyContent: "center" }}>
                   <CardMedia
                     className="empower-card-img"
                     component="img"
-                    sx={{ width: 130,height: 150 }}
+                    sx={{ width: 80,height: 100 }}
                     image={item.imageUrl}
                     alt="Bank"
                   />
