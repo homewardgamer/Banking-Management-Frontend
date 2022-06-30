@@ -17,7 +17,7 @@ function AccountStatement() {
   function generateStatement(event) {
     event.preventDefault();
     if (start === "" || end === "") {
-      const url = "http://localhost:8000/api/transaction/view/all";
+      const url = "https://bankmgmtapi.herokuapp.com/api/transaction/view/all";
       const token = localStorage.getItem("token");
       Axios.get(url, {
         headers: {
