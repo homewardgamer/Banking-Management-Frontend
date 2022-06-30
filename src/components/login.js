@@ -28,7 +28,7 @@ function Login() {
       });
   }
   function fetchUser(token) {
-    const newUrl = "http://localhost:8000/api/user/view";
+    const newUrl = "https://bankmgmtapi.herokuapp.com/api/user/view";
     Axios.get(newUrl, {
       headers: {
         Authorization: `Token ${token}`,
