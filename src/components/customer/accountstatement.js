@@ -36,7 +36,7 @@ function AccountStatement() {
           alert(err);
         });
     } else {
-      const url = "http://localhost:8000/api/transaction/filterbydate";
+      const url = "https://bankmgmtapi.herokuapp.com/api/transaction/filterbydate";
       const token = localStorage.getItem("token");
 
       Axios.get(url, {

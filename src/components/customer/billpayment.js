@@ -28,7 +28,7 @@ function BillPayment() {
   }
 
   function BillPaymentApi(event) {
-    const url = "http://localhost:8000/api/transaction/new";
+    const url = "https://bankmgmtapi.herokuapp.com/api/transaction/new";
     const data = {
       s_account: s_account,
       r_account: r_account,

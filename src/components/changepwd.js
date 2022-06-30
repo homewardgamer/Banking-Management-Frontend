@@ -22,7 +22,7 @@ function ChangePassword() {
   }
 
   function changePwdApi(event) {
-    const url = "http://localhost:8000/api/user/changepassword";
+    const url = "https://bankmgmtapi.herokuapp.com/api/user/changepassword";
     const data = {
       old_password: old_password,
       new_password: new_password,

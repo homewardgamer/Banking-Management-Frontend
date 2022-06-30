@@ -14,7 +14,7 @@ function Login() {
   }
   async function loginApi(event) {
     event.preventDefault();
-    const url = "http://localhost:8000/api/user/login";
+    const url = "https://bankmgmtapi.herokuapp.com/api/user/login";
     const data = { username: username, password: password };
 
     Axios.post(url, data)
