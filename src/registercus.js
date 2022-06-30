@@ -48,7 +48,7 @@ function Registeration() {
   }
 
   function RegisterCustomerApi(event) {
-    const url = "http://localhost:8000/api/user/register";
+    const url = "https://bankmgmtapi.herokuapp.com/api/user/register";
     const data = {
       username: username,
       first_name: first_name,
