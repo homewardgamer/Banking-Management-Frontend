@@ -56,9 +56,9 @@ function MoneyTransfer() {
         <NavbarCustomer />
         <form
           style={{
-            backgroundColor: " #85586F",
-            marginTop: "5rem",
-            paddingBottom: "3rem",
+          marginTop:"1rem",
+          background:"linear-gradient(#06beb6, #48b1bf)",
+          padding: "2.85rem",
           }}
         >
           <section>
