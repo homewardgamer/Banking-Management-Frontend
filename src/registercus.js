@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ImgBill from  "./img/register-removebg-preview.png"
+import ImgBill from  "./img/registercustomer.png"
 import "./css/bill.css";
 import Axios from "axios";
 import { Link } from "react-router-dom";
@@ -75,11 +75,11 @@ function Registeration() {
 
   return (
     <div>
-      <form
+      <form id="register"
         style={{
-          backgroundColor: " #85586F",
-          marginTop: "5rem",
-          padding: "2rem",
+          
+          background:"linear-gradient(#06beb6, #48b1bf)",
+          padding: "2.85rem",
         }}
       >
         <section>

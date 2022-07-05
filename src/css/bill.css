@@ -107,7 +107,7 @@ button.ghost {
     /* transform: translateY(-20px); */
     transition:0.5s;
     z-index: 3;
-	box-shadow: 5px 10px 15px 1px #f6a4b7 !important;
+	box-shadow: 5px 10px 15px 1px #63bcc9 !important;
 }
 #im{
 	transform: scale(1);
@@ -177,10 +177,10 @@ button.ghost {
 }
 
 .overlay {
-	background: #FF416C;
+	/* background: #FF416C;
 	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
 	/* background: linear-gradient(to right, #4e626adc, #56469e); */
-	background: linear-gradient(to right, #ff4b2bcd, #fb537acf);
+	/*background: linear-gradient(to right, #ff4b2bcd, #fb537acf); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -306,3 +306,7 @@ footer a {
   color: #fff;
   background-color: #000;
 } */
+.register{
+background-color: #20bf55;
+background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+}
