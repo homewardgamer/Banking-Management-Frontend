@@ -63,7 +63,13 @@ function NewEmployee(){
     return (
       <div>
       <NavbarAdmin/>
-      <form  style={{backgroundColor: " #85586F",marginTop: "5rem",paddingBottom: "3rem"}}>
+      <form
+        style={{
+          marginTop:"1rem",
+          background:"linear-gradient(#06beb6, #48b1bf)",
+          padding: "2.85rem",
+          }}
+      >
         <section>
   <div className="container cc" id="container">
     <div className="form-container sign-in-container">
@@ -100,7 +106,7 @@ function NewEmployee(){
           <p>Min 8 character alphanumeric Password and should include a special character</p>
         </div>
         <Link to="/">
-        <button type="submit" className="btn bb" onClick={RegisterEmployeeApi}>Add New Employee</button>
+        <button type="submit" className="btn bb" onClick={RegisterEmployeeApi} style={{marginTop: "-4rem"}}>Add New Employee</button>
         </Link>
       </form>
     </div>
