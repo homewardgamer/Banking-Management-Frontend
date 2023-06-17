@@ -18,7 +18,7 @@ function Dashboard() {
       <main>
         <div class="intro">
           {/* <p style={{padding:"1%"}}>Bringing your bank online to you </p> */}
-          <Link to="/register">
+          <Link to="/sign-in">
           <button>Login</button>
           </Link>
           <Link to="/register">

@@ -68,95 +68,119 @@ function EditAccount() {
   return (
     <div>
       <NavbarAdmin />
-      <div className="auth-wrapper">
-        <form className="auth-inner">
-          <h3>Edit Account Information</h3>
+      <form
+        style={{
+          marginTop:"1rem",
+          // background:"#6867bc",
+          padding: "2.85rem",
+          }}
+      >
+        <section>
+      <div className="container cc" id="container">
+      <div style={{marginTop:"3vh"}}><h1>Edit Customer Information</h1></div>
+        <div className="form-container sign-in-container">
+        <form action="/login" method="POST">
+            {/* <h1>New Employee</h1>
+            <br></br> */}
+        <div className="mb-">
+          {/* <label>First name</label> */}
+          <input
+            type="number"
+            className="form-control"
+            placeholder="Customer Id"
+            onChange={handleCusIdChange}
+          />
+        </div>
+        <div className="mb-2">
+          {/* <label>First name</label> */}
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Username"
+            onChange={handleUsernameChange}
+          />
+        </div>
+        <div className="mb-2">
+          {/* <label>First name</label> */}
+          <input
+            type="text"
+            className="form-control"
+            placeholder="First name"
+            onChange={handleFirstChange}
+          />
+        </div>
 
-          <div className="mb-3">
-            {/* <label>First name</label> */}
-            <input
-              type="number"
-              className="form-control"
-              placeholder="Customer Id"
-              onChange={handleCusIdChange}
-            />
-          </div>
-          <div className="mb-3">
-            {/* <label>First name</label> */}
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Username"
-              onChange={handleUsernameChange}
-            />
-          </div>
-          <div className="mb-3">
-            {/* <label>First name</label> */}
-            <input
-              type="text"
-              className="form-control"
-              placeholder="First name"
-              onChange={handleFirstChange}
-            />
-          </div>
+        <div className="mb-2">
+          {/* <label>Last name</label> */}
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Last name"
+            onChange={handleLastChange}
+          />
+        </div>
 
-          <div className="mb-3">
-            {/* <label>Last name</label> */}
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Last name"
-              onChange={handleLastChange}
-            />
-          </div>
+        
+            
+            
+          </form>
+        </div>
+        <div className="overlay-container">
+        <div className="overlay">
+        <div className="overlay-panel overlay-right">
+          {/* <img id="im" src={Register} alt="dones" width="350" height="600"/> */}
 
-          <div className="mb-3">
-            <label>Date of Birth</label>
-            <input
-              type="date"
-              className="form-control"
-              placeholder="Enter D.O.B"
-              onChange={handleDOBChange}
-            />
-          </div>
+        <div className="mb-2">
+          <label>Date of Birth</label>
+          <input
+            type="date"
+            className="form-control"
+            placeholder="Enter D.O.B"
+            onChange={handleDOBChange}
+          />
+        </div>
 
-          <div className="mb-3">
-            {/* <label>Email address</label> */}
-            <input
-              type="email"
-              className="form-control"
-              placeholder="Enter email"
-              onChange={handleEmailChange}
-            />
-          </div>
+        <div className="mb-3">
+          {/* <label>Email address</label> */}
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter email"
+            onChange={handleEmailChange}
+          />
+        </div>
 
-          <div className="mb-3">
-            {/* <label>Address</label> */}
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Enter Address"
-              onChange={handleAddressChange}
-            />
-          </div>
-          <div className="mb-3">
-            {/* <label>Address</label> */}
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Enter Branch Code"
-              onChange={handleBranchChange}
-            />
-          </div>
-          
+        <div className="mb-3">
+          {/* <label>Address</label> */}
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Enter Address"
+            onChange={handleAddressChange}
+          />
+        </div>
+        <div className="mb-3">
+          {/* <label>Address</label> */}
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Enter Branch Code"
+            onChange={handleBranchChange}
+          />
+        </div>
+        <div className="d-grid">
+          <button type="submit" className="btn btn-primary" onClick={EditCustomerApi}>
+            Edit the Information
+          </button>
+        </div>
+        
 
-          <div className="d-grid">
-            <button type="submit" className="btn btn-primary" onClick={EditCustomerApi}>
-              Edit the Information
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
+    </div>
+    </div>
+    </section>
+      </form>
     </div>
   );}else{
     return <div>

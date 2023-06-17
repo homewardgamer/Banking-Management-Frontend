@@ -32,7 +32,7 @@ function NewBranch() {
     return (
       <div>
         <NavbarAdmin />
-        {data.length === 0 ? "FUCK" : "NO"}
+        {data.length === 0 ? "OK" : "NO"}
         <div className="changepwd auth-wrapper">
           <form className="auth-inner">
             <h3>Branch Customers</h3>
@@ -40,9 +40,9 @@ function NewBranch() {
             <div className="mb-3">
               {/* <label>Branch Id</label> */}
               <input
-                type="number"
+                type="text"
                 className="form-control"
-                placeholder="Enter Branch Id"
+                placeholder="Enter Branch Code"
                 onChange={handleBranchIdChange}
               />
             </div>

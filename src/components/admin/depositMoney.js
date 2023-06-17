@@ -51,7 +51,8 @@ function DepositMoney() {
       <form
         style={{
           marginTop:"1rem",
-          background:"linear-gradient(#06beb6, #48b1bf)",
+          //background:"linear-gradient(#06beb6, #48b1bf)",
+          // background:"#6867bc",
           padding: "2.85rem",
           }}
       >

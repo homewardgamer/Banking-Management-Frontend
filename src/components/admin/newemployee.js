@@ -66,16 +66,17 @@ function NewEmployee(){
       <form
         style={{
           marginTop:"1rem",
-          background:"linear-gradient(#06beb6, #48b1bf)",
+          // background:"#6867bc",
           padding: "2.85rem",
           }}
       >
         <section>
   <div className="container cc" id="container">
+  <div style={{marginTop:"3vh"}}><h1>Add New Employee</h1></div>
     <div className="form-container sign-in-container">
     <form action="/login" method="POST">
-        <h1>New Employee</h1>
-        <br></br>
+        {/* <h1>New Employee</h1>
+        <br></br> */}
         <div className="form-group">
           {/* <label for="email">Email</label> */}
           <input type="text" className="form-control"  placeholder="Username" onChange={handleUsernameChange}/>
@@ -95,29 +96,29 @@ function NewEmployee(){
         <div className="form-group">
           {/* <label for="password">Password</label> */}
           <input type="date" className="form-control" placeholder="Date Of Birth" onChange={handleDOBChange} />
-        </div>
-        <div className="form-group">
+      </div>
+        
+        
+      </form>
+    </div>
+    <div className="overlay-container">
+    <div className="overlay">
+    <div className="overlay-panel overlay-right">
+      {/* <img id="im" src={Register} alt="dones" width="350" height="600"/> */}
+
+      
+      <div className="form-group">
           {/* <label for="password">Password</label> */}
           <input type="text" className="form-control" placeholder="Address" onChange={handleAddressChange} />
         </div>
         <div className="form-group">
           {/* <label for="password">Password</label> */}
           <input type="password" className="form-control" placeholder="Verification password" onChange={handlePasswordChange}/>
-          <p>Min 8 character alphanumeric Password and should include a special character</p>
+          <p style={{color:"black"}}>Min 8 character alphanumeric Password and should include a special character</p>
         </div>
         <Link to="/">
-        <button type="submit" className="btn bb" onClick={RegisterEmployeeApi} style={{marginTop: "-4rem"}}>Add New Employee</button>
+        <button type="submit" className="btn bb" onClick={RegisterEmployeeApi} style={{marginTop: "-2rem"}}>Add New Employee</button>
         </Link>
-      </form>
-    </div>
-    <div className="overlay-container">
-    <div className="overlay">
-    <div className="overlay-panel overlay-right">
-      {/* <h1>Welcome Back!</h1>
-      <p>Are you a new user? </p>
-      <a className="btn btn-light btn-lg" href="/register" role="button">SIGN UP</a>
-      <a className="btn btn-dark btn-lg" href="/" role="button">Back Home</a>  */}
-      <img id="im" src={Register} alt="dones" width="350" height="600"/>
     </div>
   </div>
 </div>

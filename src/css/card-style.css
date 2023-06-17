@@ -112,8 +112,17 @@ p{
     color: #fff;
     padding: 1rem 0 !important;
     background:linear-gradient(to right, #41d8dd, #5183ee);
-    border-radius: 1em;
+    border-radius: 0.6em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
+
+.topcard{
+    align-items: center;
+}
+
 .card-body-small{
     color: #fff;
     padding: 1rem 0 !important;
