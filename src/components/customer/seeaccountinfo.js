@@ -7,7 +7,7 @@ import { format } from "date-fns";
 function SeeAccount() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    const url = `https://bankmgmtapi.herokuapp.com/api/account/list`;
+    const url = `http://127.0.0.1:8000/api/account/list`;
     const token = localStorage.getItem("token");
     Axios.get(url, { headers: { Authorization: `Token ${token}` } })
       .then((res) => {

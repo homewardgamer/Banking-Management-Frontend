@@ -21,7 +21,7 @@ function NewBranch() {
   }
 
   function newBranchApi(event) {
-    const url = "https://bankmgmtapi.herokuapp.com/api/branch/add";
+    const url = "http://127.0.0.1:8000/api/branch/add";
     const data = {
       branch_name: branch_name,
       branch_code: branch_code,

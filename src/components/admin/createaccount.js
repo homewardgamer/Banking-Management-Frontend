@@ -21,7 +21,7 @@ function CreateAccount(){
         setAccountType(value);
       }
     function CreateAccountApi(event) {
-      const url = "https://bankmgmtapi.herokuapp.com/api/account/create";
+      const url = "http://127.0.0.1:8000/api/account/create";
       
       const data = { account_holder:id,account_type:account_type, pin: pin };
       event.preventDefault();

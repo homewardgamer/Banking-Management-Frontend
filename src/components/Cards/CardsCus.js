@@ -103,7 +103,7 @@ export default function CardSnippet(props) {
   });
   useEffect(() => {
     const token = localStorage.getItem("token");
-    const url = "https://bankmgmtapi.herokuapp.com/api/user/view";
+    const url = "http://127.0.0.1:8000/api/user/view";
     Axios.get(url, {
       headers: {
         Authorization: `Token ${token}`,

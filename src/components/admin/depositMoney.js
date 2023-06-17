@@ -22,7 +22,7 @@ function DepositMoney() {
     setAmount(value);
   }
   async function depositApi(event) {
-    const url = "https://bankmgmtapi.herokuapp.com/api/transaction/new";
+    const url = "http://127.0.0.1:8000/api/transaction/new";
     const data = {
       r_account: r_account,
       pin: pin,

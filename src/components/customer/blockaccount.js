@@ -15,7 +15,7 @@ function BlockAccount(){
       setPin(value);
     }
     function DisableAccountApi(event) {
-      const url = `https://bankmgmtapi.herokuapp.com/api/account/disable/${account_id}`;
+      const url = `http://127.0.0.1:8000/api/account/disable/${account_id}`;
       event.preventDefault();
       const data = { account_id: account_id, pin: pin };
       const token = localStorage.getItem('token');

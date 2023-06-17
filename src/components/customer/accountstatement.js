@@ -17,7 +17,7 @@ function AccountStatement() {
   function generateStatement(event) {
     event.preventDefault();
     if (start === "" || end === "") {
-      const url = "https://bankmgmtapi.herokuapp.com/api/transaction/view/all";
+      const url = "http://127.0.0.1:8000/api/transaction/view/all";
       const token = localStorage.getItem("token");
       Axios.get(url, {
         headers: {
@@ -36,7 +36,7 @@ function AccountStatement() {
           alert(err);
         });
     } else {
-      const url = "https://bankmgmtapi.herokuapp.com/api/transaction/filterbydate";
+      const url = "http://127.0.0.1:8000/api/transaction/filterbydate";
       const token = localStorage.getItem("token");
 
       Axios.get(url, {

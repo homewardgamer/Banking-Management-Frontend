@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Axios from "axios";
+import "../css/home.css"
 function Login() {
   var [username, setUsername] = useState("");
   var [password, setPassword] = useState("");
@@ -14,7 +15,7 @@ function Login() {
   }
   async function loginApi(event) {
     event.preventDefault();
-    const url = "https://bankmgmtapi.herokuapp.com/api/user/login";
+    const url = "http://127.0.0.1:8000/api/user/login";
     const data = { username: username, password: password };
 
     Axios.post(url, data)
@@ -28,7 +29,7 @@ function Login() {
       });
   }
   function fetchUser(token) {
-    const newUrl = "https://bankmgmtapi.herokuapp.com/api/user/view";
+    const newUrl = "http://127.0.0.1:8000/api/user/view";
     Axios.get(newUrl, {
       headers: {
         Authorization: `Token ${token}`,
@@ -53,6 +54,15 @@ function Login() {
   }
 
   return (
+    <div>
+      <header class="header">
+        <a href="/" class="logo">Bank Management System</a>
+        <nav class="nav-items">
+          <a href="/">Home</a>
+          <a href="/sign-in">Login</a>
+          <a href="/register">Register</a>
+        </nav>
+      </header>
     <div className="auth-wrapper">
       <form className="auth-inner">
         <h3>Log In</h3>
@@ -77,7 +87,7 @@ function Login() {
           />
         </div>
 
-        <div className="mb-3">
+        {/* <div className="mb-3">
           <div className="custom-control custom-checkbox">
             <input
               type="checkbox"
@@ -88,7 +98,7 @@ function Login() {
               Remember me
             </label>
           </div>
-        </div>
+        </div> */}
 
         <div className="d-grid">
           <button type="submit" className="btn btn-primary" onClick={loginApi}>
@@ -99,6 +109,7 @@ function Login() {
           Forgot <a href="/">password?</a>
         </p> */}
       </form>
+    </div>
     </div>
   );
 }

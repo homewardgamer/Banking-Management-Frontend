@@ -3,6 +3,7 @@ import ImgBill from  "./img/registercustomer.png"
 import "./css/bill.css";
 import Axios from "axios";
 import { Link } from "react-router-dom";
+import "./home"
 
 function Registeration() {
   var [username, setUsername] = useState("");
@@ -48,7 +49,7 @@ function Registeration() {
   }
 
   function RegisterCustomerApi(event) {
-    const url = "https://bankmgmtapi.herokuapp.com/api/user/register";
+    const url = "http://127.0.0.1:8000/api/user/register";
     const data = {
       username: username,
       first_name: first_name,
@@ -75,9 +76,16 @@ function Registeration() {
 
   return (
     <div>
+      <header class="header">
+        <a href="/" class="logo">Bank Management System</a>
+        <nav class="nav-items">
+          <a href="/">Home</a>
+          <a href="/sign-in">Login</a>
+          <a href="/register">Register</a>
+        </nav>
+      </header>
       <form id="register"
         style={{
-          
           background:"linear-gradient(#06beb6, #48b1bf)",
           padding: "2.85rem",
         }}
@@ -175,10 +183,6 @@ function Registeration() {
             <div className="overlay-container">
               <div className="overlay">
                 <div className="overlay-panel overlay-right">
-                  {/* <h1>Welcome Back!</h1>
-      <p>Are you a new user? </p>
-      <a className="btn btn-light btn-lg" href="/register" role="button">SIGN UP</a>
-      <a className="btn btn-dark btn-lg" href="/" role="button">Back Home</a>  */}
                   <img
                     id="im"
                     src={ImgBill}

@@ -7,7 +7,7 @@ function SeeCusAccounts() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = `https://bankmgmtapi.herokuapp.com/api/account/view/all`;
+    const url = `http://127.0.0.1:8000/api/account/view/all`;
     const token = localStorage.getItem("token");
     Axios.get(url, { headers: { Authorization: `Token ${token}` } }, data)
       .then((res) => {

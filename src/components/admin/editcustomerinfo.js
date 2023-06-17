@@ -47,7 +47,7 @@ function EditAccount() {
   }
 
   function EditCustomerApi(event) {
-    const url = `https://bankmgmtapi.herokuapp.com/api/user/update/${id}`;
+    const url = `http://127.0.0.1:8000/api/user/update/${id}`;
     const data = {id:id,username:username,first_name: first_name,last_name: last_name,address: address,dob: dob, email:email,branch_code:branch_code};
     const token = localStorage.getItem('token');
     event.preventDefault();

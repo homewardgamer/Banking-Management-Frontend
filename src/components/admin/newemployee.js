@@ -44,7 +44,7 @@ function NewEmployee(){
   }
 
   function RegisterEmployeeApi(event) {
-    const url = "https://bankmgmtapi.herokuapp.com/api/user/register";
+    const url = "http://127.0.0.1:8000/api/user/register";
     const data = { username: username,first_name:first_name,last_name:last_name,dob:dob,email:email,address:address, password: password,is_employee:true };
     event.preventDefault();
     Axios.post(url, data)

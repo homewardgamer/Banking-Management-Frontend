@@ -13,7 +13,7 @@ function NewBranch() {
 
   function BranchCusApi(event) {
     event.preventDefault();
-    const url = `https://bankmgmtapi.herokuapp.com/api/branch/${branch_id}/customers`;
+    const url = `http://127.0.0.1:8000/api/branch/${branch_id}/customers`;
     const token = localStorage.getItem("token");
     Axios.get(url, { headers: { Authorization: `Token ${token}` } })
       .then((res) => {
