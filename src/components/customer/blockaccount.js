@@ -61,8 +61,14 @@ return (
         </div>
 
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary" onClick={DisableAccountApi}>
+          {/* <button type="submit" className="btn btn-primary" onClick={DisableAccountApi}>
             Block Account
+          </button> */}
+          <button
+              type="submit"
+              className="btn bb"
+              onClick={DisableAccountApi}>
+              Block Account
           </button>
         </div>
       </form>

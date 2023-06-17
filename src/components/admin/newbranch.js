@@ -79,13 +79,19 @@ function NewBranch() {
           </div>
 
           <div className="d-grid">
-            <button
+            {/* <button
               type="submit"
               className="btn btn-primary"
               onClick={newBranchApi}
             >
               Add Branch
-            </button>
+            </button> */}
+            <button
+              type="submit"
+              className="btn bb"
+              onClick={newBranchApi}>
+              Add Branch
+          </button>
           </div>
         </form>
       </div>

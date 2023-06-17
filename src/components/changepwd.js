@@ -92,13 +92,19 @@ function ChangePassword() {
             />
           </div>
           <div className="d-grid">
-            <button
+            {/* <button
               type="submit"
               className="btn btn-primary"
               onClick={changePwdApi}
             >
               Update Password
-            </button>
+            </button> */}
+            <button
+              type="submit"
+              className="btn bb"
+              onClick={changePwdApi}>
+              Update Password
+          </button>
           </div>
         </form>
       </div>

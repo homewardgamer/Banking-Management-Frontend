@@ -169,8 +169,14 @@ function EditAccount() {
           />
         </div>
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary" onClick={EditCustomerApi}>
+          {/* <button type="submit" className="btn btn-primary" onClick={EditCustomerApi}>
             Edit the Information
+          </button> */}
+          <button
+              type="submit"
+              className="btn bb"
+              onClick={EditCustomerApi}>
+              Submit 
           </button>
         </div>
         

@@ -83,11 +83,10 @@ function AccountStatement() {
 
             <div className="d-grid">
               <button
-                type="submit"
-                className="btn btn-primary"
-                onClick={generateStatement}
-              >
-                Generate Statement
+                    type="submit"
+                    className="btn bb"
+                    onClick={generateStatement}>
+                    Generate Statement
               </button>
             </div>
           </form>

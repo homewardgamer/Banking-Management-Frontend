@@ -84,8 +84,14 @@ return (
         </div>
 
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary" onClick={CreateAccountApi}>
+          {/* <button type="submit" className="btn btn-primary" onClick={CreateAccountApi}>
             Create Account
+          </button> */}
+          <button
+              type="submit"
+              className="btn bb"
+              onClick={CreateAccount}>
+              Create Account
           </button>
         </div>
       </form>
