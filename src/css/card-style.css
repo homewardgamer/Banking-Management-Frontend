@@ -113,7 +113,9 @@ p{
     color: #fff;
     padding: 1rem 0 !important;
     /* background:linear-gradient(to right, #41d8dd, #5183ee); */
-    background: linear-gradient(to bottom, #4b4883, #363557);
+    /* background: linear-gradient(to bottom, #4b4883, #363557); */
+    background-color: #6c33a3;
+    background-image: linear-gradient(316deg, #6c33a3 0%, #8241b8 74%);
     border-radius: 0.6em;
     width: 60%;
     margin-left: auto;

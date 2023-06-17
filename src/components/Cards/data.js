@@ -8,21 +8,21 @@ const data = {
   cardData: [
     {
       id: 1,
-      colorName: "#B3C1F0",
+      colorName: "#6c33a3",
       imageUrl: AccountStatement,
       note: "Acount Statement",
       urlsrc: "/account-statement",
     },
     {
         id: 2,
-        colorName: "#B3C1F0",
+        colorName: "#6c33a3",
         imageUrl: MoneyTransfer,
         note: "Money Transfer",
         urlsrc: "/transfer",
       },
       {
         id: 3,
-        colorName: "#B3C1F0",
+        colorName: "#6c33a3",
         imageUrl: editCustInfo,
         note: "See Account Info",
         urlsrc: "/see-account-info",
@@ -31,21 +31,21 @@ const data = {
 
         
         id: 4,
-        colorName: "#B3C1F0",
+        colorName: "#6c33a3",
         imageUrl: BillPayment,
         note: "Bill Payment",
         urlsrc: "/bill",
       },
       {
         id: 5,
-        colorName: "#B3C1F0",
+        colorName: "#6c33a3",
         imageUrl: BlockAccount,
         note: "Block Account",
         urlsrc: '/block-account',
       },
       {
         id: 6,
-        colorName: "#B3C1F0",
+        colorName: "#6c33a3", /*#B3C1F0 */
         imageUrl: ChangePassword,
         note: "Change Password",
         urlsrc: '/change-pwd',

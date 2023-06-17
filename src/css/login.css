@@ -1,6 +1,8 @@
 body{
     margin: 0;
     background: #6867bc;
+    /* background: linear-gradient(to right, #9087f3,#893db4); */
+    background: linear-gradient(135deg, rgb(206, 159, 252) 10%, rgb(115, 103, 240) 100%);
     /* background-image:url("../img/bank.jpg") ; */
 }
 .header {
