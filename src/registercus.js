@@ -84,7 +84,7 @@ function Registeration() {
       </header>
       <form id="register"
         style={{
-          background:"#6867bc",
+          // background:"#6867bc",
           paddingBottom: "1rem",
         }}
       >

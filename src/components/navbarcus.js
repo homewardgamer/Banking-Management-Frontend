@@ -10,8 +10,8 @@ function NavBarCus() {
     <div>
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/" style={{ color: "red" }}>
-            Bank
+          <Link className="navbar-brand" to="/" style={{ color: "red", fontWeight:"bold" }}>
+            Bank Management System
           </Link>
           <button
             className="navbar-toggler"

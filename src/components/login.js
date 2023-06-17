@@ -102,7 +102,7 @@ function Login() {
         </div> */}
 
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary" onClick={loginApi}>
+          <button type="submit" className="btn bb" onClick={loginApi}>
             Submit
           </button>
         </div>

@@ -48,7 +48,7 @@ function WithdrawMoney() {
       <form
         style={{
           marginTop:"1rem",
-          background:"#6867bc",
+          // background:"#6867bc",
           padding: "2.85rem",
           }}
       >

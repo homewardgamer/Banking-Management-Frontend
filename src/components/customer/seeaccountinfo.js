@@ -26,7 +26,7 @@ function SeeAccount() {
         <div className="auth-wrapper">
           <h1 style={{ margin: "2%" }}>Account(s) Information</h1>
           <div class="wrapper">
-            <table class="table  table-hover">
+            <table class="table  table-hover" >
               <thead>
                 <tr className="table-dark">
                   <th scope="col">Account ID</th>

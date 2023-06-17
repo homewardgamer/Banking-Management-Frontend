@@ -72,7 +72,7 @@ export default function CardSnippet(props) {
                     variant="h6"
                     component="div"
                   ></Typography>
-                  <Typography variant="body2" color="text.secondary" >
+                  <Typography variant="body2" color="text.secondary" style={{fontWeight:"bold"}}>
                     {item.note}
                   </Typography>
                 </CardContent>

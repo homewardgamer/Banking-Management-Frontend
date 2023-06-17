@@ -102,7 +102,8 @@ p{
   }
 
   .card-imgcolor{
-    background:linear-gradient(to right, #54e38e, #41c7af);
+    /* background:linear-gradient(to right, #54e38e, #41c7af); */
+    background: #302f49;
   }
   
 .card:hover{
@@ -111,7 +112,8 @@ p{
 .card-body-big{
     color: #fff;
     padding: 1rem 0 !important;
-    background:linear-gradient(to right, #41d8dd, #5183ee);
+    /* background:linear-gradient(to right, #41d8dd, #5183ee); */
+    background: linear-gradient(to bottom, #4b4883, #363557);
     border-radius: 0.6em;
     width: 60%;
     margin-left: auto;

@@ -10,8 +10,8 @@ function NavbarAdmin() {
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style={{backgroundColor:"#302f49 !important"}}>
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/" style={{ color: "red" }}>
-          Bank
+        <Link className="navbar-brand" to="/" style={{  fontWeight:"bold" }}>
+          Bank Management system
         </Link>
         <button
           className="navbar-toggler"

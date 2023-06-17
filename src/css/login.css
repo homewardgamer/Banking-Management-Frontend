@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background: #6867bc;
+    /* background-image:url("../img/bank.jpg") ; */
 }
 .header {
     display: flex;
