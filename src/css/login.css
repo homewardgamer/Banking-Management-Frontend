@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    background: #6867bc;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14vh;
+    background-color: #302f49;
+  }
+  
+  .header .logo {
+    font-size: 25px;
+    /* font-family: 'Sriracha', cursive; */
+    font-weight:bold;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+  }
+  
+  .nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+    color: white;
+    padding: 1.6vh 1.6vh;
+  }

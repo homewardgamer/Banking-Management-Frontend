@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import ImgBill from  "./img/registercustomer.png"
-import "./css/bill.css";
+import "./css/register.css";
 import Axios from "axios";
 import { Link } from "react-router-dom";
-import "./home"
 
 function Registeration() {
   var [username, setUsername] = useState("");
@@ -86,8 +85,8 @@ function Registeration() {
       </header>
       <form id="register"
         style={{
-          background:"linear-gradient(#06beb6, #48b1bf)",
-          padding: "2.85rem",
+          background:"#6867bc",
+          paddingBottom: "1rem",
         }}
       >
         <section>
