@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ImgBill from  "./img/registercustomer.png"
 import "./css/register.css";
 import Axios from "axios";
 import { Link } from "react-router-dom";
@@ -91,9 +90,9 @@ function Registeration() {
       >
         <section>
           <div className="container cc" id="container">
+          <div style={{marginTop:"3vh"}}><h1>Register</h1></div>
             <div className="form-container sign-in-container">
-              <form action="/login" method="POST" style={{paddingTop: "2rem"}}>
-                <h1>Register</h1>
+              <form action="/login" method="POST">
                 
                 <div className="form-group">
                   {/* <label for="email">Email</label> */}
@@ -140,6 +139,14 @@ function Registeration() {
                     onChange={handleDOBChange}
                   />
                 </div>
+                
+              </form>
+            </div>
+            <div className="overlay-container">
+              <div className="overlay">
+                <div className="overlay-panel overlay-right">
+                <form>
+                
                 <div className="form-group">
                   {/* <label for="password">Password</label> */}
                   <input
@@ -167,9 +174,9 @@ function Registeration() {
                     onChange={handlePasswordChange}
                   />
                 </div>
-                <p style={{fontSize: "10px", fontWeight: "bold",marginTop: "-0.5rem"}}>Min 8 character Alphanumeric Password and should include a Special character</p>
+                <p style={{fontSize: "10px", fontWeight: "bold", color:"black"}}>Min 8 character Alphanumeric Password and should include a Special character</p>
                 <Link to="/">
-                  <button style={{marginTop: "-4rem"}}
+                  <button style={{marginTop: "-2rem"}}
                     type="submit"
                     className="btn bb"
                     onClick={RegisterCustomerApi}
@@ -177,18 +184,7 @@ function Registeration() {
                     REGISTER
                   </button>
                 </Link>
-              </form>
-            </div>
-            <div className="overlay-container">
-              <div className="overlay">
-                <div className="overlay-panel overlay-right">
-                  <img
-                    id="im"
-                    src={ImgBill}
-                    alt="dones"
-                    width="350"
-                    height="600"
-                  />
+                </form>
                 </div>
               </div>
             </div>
